@@ -10,7 +10,7 @@ class StakePoolDepositStakeLayout extends StakePoolProgramLayout {
     ProgramLayout.decodeAndValidateStruct(
         layout: _layout,
         bytes: bytes,
-        instruction: StakePoolProgramInstruction.depositStake.insturction);
+        instruction: StakePoolProgramInstruction.depositStake.instruction);
     return const StakePoolDepositStakeLayout();
   }
   static final StructLayout _layout =

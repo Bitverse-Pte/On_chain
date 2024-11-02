@@ -20,7 +20,7 @@ class SPLTokenInitializeNonTransferableMintLayout
       layout: _layout,
       bytes: bytes,
       instruction:
-          SPLTokenProgramInstruction.initializeNonTransferableMint.insturction,
+          SPLTokenProgramInstruction.initializeNonTransferableMint.instruction,
     );
     return SPLTokenInitializeNonTransferableMintLayout();
   }

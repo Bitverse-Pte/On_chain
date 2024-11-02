@@ -24,7 +24,7 @@ class MetaplexAuctionHouseCreateAuctionHouseLayout
         layout: _layout,
         bytes: data,
         instruction: MetaplexAuctionHouseProgramInstruction
-            .createAuctionHouse.insturction);
+            .createAuctionHouse.instruction);
     return MetaplexAuctionHouseCreateAuctionHouseLayout(
         feePayerBump: decode["feePayerBump"],
         bump: decode["bump"],

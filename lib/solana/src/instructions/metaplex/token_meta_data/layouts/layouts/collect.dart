@@ -11,7 +11,7 @@ class MetaplexTokenMetaDataCollectLayout
         layout: _layout,
         bytes: data,
         instruction:
-            MetaplexTokenMetaDataProgramInstruction.collect.insturction);
+            MetaplexTokenMetaDataProgramInstruction.collect.instruction);
     return const MetaplexTokenMetaDataCollectLayout();
   }
 

@@ -26,7 +26,7 @@ class SPLTokenInitializePermanentDelegateLayout extends SPLTokenProgramLayout {
       layout: _layout,
       bytes: bytes,
       instruction:
-          SPLTokenProgramInstruction.initializePermanentDelegate.insturction,
+          SPLTokenProgramInstruction.initializePermanentDelegate.instruction,
     );
     final SolAddress delegate = decode["delegate"];
     return SPLTokenInitializePermanentDelegateLayout(

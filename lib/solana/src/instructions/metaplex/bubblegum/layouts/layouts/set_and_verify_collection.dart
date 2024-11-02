@@ -32,7 +32,7 @@ class MetaplexBubblegumSetAndVerifyCollectionLayout
         layout: _layout,
         bytes: data,
         instruction: MetaplexBubblegumProgramInstruction
-            .setAndVerifyCollection.insturction);
+            .setAndVerifyCollection.instruction);
     return MetaplexBubblegumSetAndVerifyCollectionLayout(
         root: decode["root"],
         dataHash: decode["dataHash"],

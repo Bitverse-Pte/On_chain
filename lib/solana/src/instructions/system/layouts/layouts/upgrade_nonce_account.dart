@@ -7,7 +7,7 @@ class SystemUpgradeNonceAccountLayout extends SystemProgramLayout {
   factory SystemUpgradeNonceAccountLayout.fromBuffer(List<int> data) {
     ProgramLayout.decodeAndValidateStruct(
         bytes: data,
-        instruction: SystemProgramInstruction.upgradeNonceAccount.insturction,
+        instruction: SystemProgramInstruction.upgradeNonceAccount.instruction,
         layout: _layout);
     return const SystemUpgradeNonceAccountLayout();
   }

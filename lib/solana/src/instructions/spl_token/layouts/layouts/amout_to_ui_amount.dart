@@ -22,7 +22,7 @@ class SPLTokenAmountToUiAmountLayout extends SPLTokenProgramLayout {
     final decode = ProgramLayout.decodeAndValidateStruct(
         layout: _layout,
         bytes: bytes,
-        instruction: SPLTokenProgramInstruction.amountToUiAmount.insturction);
+        instruction: SPLTokenProgramInstruction.amountToUiAmount.instruction);
     return SPLTokenAmountToUiAmountLayout(amount: decode["amount"]);
   }
 

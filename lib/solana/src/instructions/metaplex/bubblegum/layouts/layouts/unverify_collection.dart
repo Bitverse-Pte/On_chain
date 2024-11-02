@@ -27,7 +27,7 @@ class MetaplexBubblegumUnverifyCollectionLayout
         layout: _layout,
         bytes: data,
         instruction:
-            MetaplexBubblegumProgramInstruction.unverifyCollection.insturction);
+            MetaplexBubblegumProgramInstruction.unverifyCollection.instruction);
     return MetaplexBubblegumUnverifyCollectionLayout(
         root: decode["root"],
         dataHash: decode["dataHash"],

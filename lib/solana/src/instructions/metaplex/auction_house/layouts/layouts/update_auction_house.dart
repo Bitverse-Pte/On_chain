@@ -18,7 +18,7 @@ class MetaplexAuctionHouseUpdateAuctionHouseLayout
         layout: _layout,
         bytes: data,
         instruction: MetaplexAuctionHouseProgramInstruction
-            .updateAuctionHouse.insturction);
+            .updateAuctionHouse.instruction);
     return MetaplexAuctionHouseUpdateAuctionHouseLayout(
         canChangeSalePrice: decode["canChangeSalePrice"],
         requiresSignOff: decode["requiresSignOff"],

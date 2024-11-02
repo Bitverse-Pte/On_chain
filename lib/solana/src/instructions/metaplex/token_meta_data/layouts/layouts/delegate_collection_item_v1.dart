@@ -16,7 +16,7 @@ class MetaplexTokenMetaDataDelegateCollectionItemV1Layout
         layout: _layout,
         bytes: data,
         instruction: MetaplexTokenMetaDataProgramInstruction
-            .delegateCollectionItemV1.insturction,
+            .delegateCollectionItemV1.instruction,
         discriminator: discriminator);
     return MetaplexTokenMetaDataDelegateCollectionItemV1Layout(
         authorizationData: decode["authorizationData"] == null

@@ -16,7 +16,7 @@ class MetaplexFixedPriceSaleChangeMarketLayout
         layout: _layout,
         bytes: data,
         instruction:
-            MetaplexFixedPriceSaleProgramInstruction.changeMarket.insturction);
+            MetaplexFixedPriceSaleProgramInstruction.changeMarket.instruction);
     return MetaplexFixedPriceSaleChangeMarketLayout(
         newName: decode["newName"],
         newDescription: decode["newDescription"],

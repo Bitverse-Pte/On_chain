@@ -14,7 +14,7 @@ class MetaplexTokenMetaDataDelegateStandardV1Layout
         layout: _layout,
         bytes: data,
         instruction: MetaplexTokenMetaDataProgramInstruction
-            .delegateStandardV1.insturction,
+            .delegateStandardV1.instruction,
         discriminator: discriminator);
     return MetaplexTokenMetaDataDelegateStandardV1Layout(
         amount: decode["amount"]);

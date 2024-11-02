@@ -24,7 +24,7 @@ class MetaplexBubblegumUpdateMetadataLayout
         layout: _layout,
         bytes: data,
         instruction:
-            MetaplexBubblegumProgramInstruction.updateMetadata.insturction);
+            MetaplexBubblegumProgramInstruction.updateMetadata.instruction);
     return MetaplexBubblegumUpdateMetadataLayout(
         root: decode["root"],
         nonce: decode["nonce"],

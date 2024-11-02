@@ -21,7 +21,7 @@ class SystemCreateLayout extends SystemProgramLayout {
     final decode = ProgramLayout.decodeAndValidateStruct(
         layout: _layout,
         bytes: data,
-        instruction: SystemProgramInstruction.create.insturction);
+        instruction: SystemProgramInstruction.create.instruction);
     return SystemCreateLayout(
         lamports: decode["lamports"],
         space: decode["space"],

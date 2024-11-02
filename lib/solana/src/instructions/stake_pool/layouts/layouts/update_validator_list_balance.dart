@@ -20,7 +20,7 @@ class StakePoolUpdateValidatorListBalanceLayout extends StakePoolProgramLayout {
         layout: _layout,
         bytes: bytes,
         instruction:
-            StakePoolProgramInstruction.updateValidatorListBalance.insturction);
+            StakePoolProgramInstruction.updateValidatorListBalance.instruction);
     return StakePoolUpdateValidatorListBalanceLayout(
         noMerge: decode["noMerge"], startIndex: decode["startIndex"]);
   }

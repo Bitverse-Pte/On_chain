@@ -12,7 +12,7 @@ class MetaplexTokenMetaDataCloseEscrowAccountLayout
         layout: _layout,
         bytes: data,
         instruction: MetaplexTokenMetaDataProgramInstruction
-            .closeEscrowAccount.insturction);
+            .closeEscrowAccount.instruction);
     return const MetaplexTokenMetaDataCloseEscrowAccountLayout();
   }
 

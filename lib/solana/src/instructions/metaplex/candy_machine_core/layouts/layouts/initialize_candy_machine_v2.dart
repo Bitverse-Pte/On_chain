@@ -16,7 +16,7 @@ class MetaplexCandyMachineInitializeCandyMachineV2Layout
         layout: _layout,
         bytes: data,
         instruction: MetaplexCandyMachineProgramInstruction
-            .initializeCandyMachineV2.insturction);
+            .initializeCandyMachineV2.instruction);
     return MetaplexCandyMachineInitializeCandyMachineV2Layout(
         data: CandyMachineData.fromJson(decode["candyMachineData"]),
         tokenStandard: MetaDataTokenStandard.fromJson(decode["tokenStandard"]));

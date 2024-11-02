@@ -12,7 +12,7 @@ class MetaplexBubblegumMintToCollectionV1Layout
         layout: _layout,
         bytes: data,
         instruction:
-            MetaplexBubblegumProgramInstruction.mintToCollectionV1.insturction);
+            MetaplexBubblegumProgramInstruction.mintToCollectionV1.instruction);
     return MetaplexBubblegumMintToCollectionV1Layout(
         metaData: MetaData.fromJson(decode["metaData"]));
   }

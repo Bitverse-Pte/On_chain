@@ -28,7 +28,7 @@ class MetaplexNFTPacksInitPackLayout extends MetaplexNFTPacksProgramLayout {
     final decode = ProgramLayout.decodeAndValidateStruct(
         layout: _layout,
         bytes: data,
-        instruction: MetaplexNFTPacksProgramInstruction.initPack.insturction);
+        instruction: MetaplexNFTPacksProgramInstruction.initPack.instruction);
     return MetaplexNFTPacksInitPackLayout(
         name: decode["name"],
         description: decode["description"],

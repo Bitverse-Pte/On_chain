@@ -19,7 +19,7 @@ class VoteProgramAuthorizeWithSeedLayout extends VoteProgramLayout {
     final decode = ProgramLayout.decodeAndValidateStruct(
         layout: _layout,
         bytes: data,
-        instruction: VoteProgramInstruction.authorizeWithSeed.insturction);
+        instruction: VoteProgramInstruction.authorizeWithSeed.instruction);
     final voteData =
         Map<String, dynamic>.from(decode["voteAuthorizeWithSeedArgs"]);
     return VoteProgramAuthorizeWithSeedLayout(

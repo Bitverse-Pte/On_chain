@@ -5,10 +5,10 @@ import 'package:on_chain/solana/src/instructions/metaplex/gumdrop/constant.dart'
 
 class MetaplexGumdropProgramInstruction implements ProgramLayoutInstruction {
   @override
-  final List<int> insturction;
+  final List<int> instruction;
   @override
   final String name;
-  const MetaplexGumdropProgramInstruction(this.insturction, this.name);
+  const MetaplexGumdropProgramInstruction(this.instruction, this.name);
   static const MetaplexGumdropProgramInstruction claim =
       MetaplexGumdropProgramInstruction(
           [62, 198, 214, 193, 213, 159, 108, 210], "Claim");
@@ -53,7 +53,7 @@ class MetaplexGumdropProgramInstruction implements ProgramLayoutInstruction {
   static MetaplexGumdropProgramInstruction? getInstruction(dynamic value) {
     try {
       return values.firstWhere(
-          (element) => BytesUtils.bytesEqual(element.insturction, value));
+          (element) => BytesUtils.bytesEqual(element.instruction, value));
     } catch (_) {
       return null;
     }

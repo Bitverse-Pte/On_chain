@@ -29,7 +29,7 @@ class SPLToken2022InitializeMetadataPointerLayout
         layout: _layout,
         bytes: bytes,
         instruction:
-            SPLTokenProgramInstruction.metadataPointerExtension.insturction);
+            SPLTokenProgramInstruction.metadataPointerExtension.instruction);
     return SPLToken2022InitializeMetadataPointerLayout(
         authority: decode["authority"] == SolAddress.defaultPubKey
             ? null

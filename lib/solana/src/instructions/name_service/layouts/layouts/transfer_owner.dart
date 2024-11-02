@@ -17,7 +17,7 @@ class NameServiceTransferLayout extends NameServiceProgramLayout {
     final decode = ProgramLayout.decodeAndValidateStruct(
       layout: _layout,
       bytes: data,
-      instruction: NameServiceProgramInstruction.transfer.insturction,
+      instruction: NameServiceProgramInstruction.transfer.instruction,
     );
     return NameServiceTransferLayout(newOwnerKey: decode["newOwnerKey"]);
   }

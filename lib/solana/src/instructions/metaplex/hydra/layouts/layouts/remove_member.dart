@@ -9,7 +9,7 @@ class MetaplexHydraRemoveMemberLayout extends MetaplexHydraProgramLayout {
         layout: _layout,
         bytes: data,
         instruction:
-            MetaplexHydraProgramInstruction.processRemoveMember.insturction);
+            MetaplexHydraProgramInstruction.processRemoveMember.instruction);
     return const MetaplexHydraRemoveMemberLayout();
   }
 

@@ -13,7 +13,7 @@ class MetaplexAuctionHouseCancelLayout
     final decode = MetaplexAuctionHouseProgramLayout.decodeAndValidateStruct(
         layout: _layout,
         bytes: data,
-        instruction: MetaplexAuctionHouseProgramInstruction.cancel.insturction);
+        instruction: MetaplexAuctionHouseProgramInstruction.cancel.instruction);
     return MetaplexAuctionHouseCancelLayout(
         buyerPrice: decode["buyerPrice"], tokenSize: decode["tokenSize"]);
   }

@@ -19,7 +19,7 @@ class MetaplexBubblegumVerifyLeafLayout extends MetaplexBubblegumProgramLayout {
         layout: _layout,
         bytes: data,
         instruction:
-            MetaplexBubblegumProgramInstruction.verifyLeaf.insturction);
+            MetaplexBubblegumProgramInstruction.verifyLeaf.instruction);
     return MetaplexBubblegumVerifyLeafLayout(
         root: decode["root"], leaf: decode["leaf"], index: decode["index"]);
   }

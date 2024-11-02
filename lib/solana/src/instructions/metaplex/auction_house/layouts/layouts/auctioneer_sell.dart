@@ -19,7 +19,7 @@ class MetaplexAuctionHouseAuctioneerSellLayout
         layout: _layout,
         bytes: data,
         instruction:
-            MetaplexAuctionHouseProgramInstruction.auctioneerSell.insturction);
+            MetaplexAuctionHouseProgramInstruction.auctioneerSell.instruction);
     return MetaplexAuctionHouseAuctioneerSellLayout(
       tradeStateBump: decode["tradeStateBump"],
       freeTradeStateBump: decode["freeTradeStateBump"],

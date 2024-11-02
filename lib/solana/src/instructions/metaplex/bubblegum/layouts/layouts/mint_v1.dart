@@ -10,7 +10,7 @@ class MetaplexBubblegumMintV1Layout extends MetaplexBubblegumProgramLayout {
     final decode = MetaplexBubblegumProgramLayout.decodeAndValidateStruct(
         layout: _layout,
         bytes: data,
-        instruction: MetaplexBubblegumProgramInstruction.mintV1.insturction);
+        instruction: MetaplexBubblegumProgramInstruction.mintV1.instruction);
     return MetaplexBubblegumMintV1Layout(
         message: MetaData.fromJson(decode["metaData"]));
   }

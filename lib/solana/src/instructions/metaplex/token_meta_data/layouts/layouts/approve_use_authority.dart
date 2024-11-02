@@ -14,7 +14,7 @@ class MetaplexTokenMetaDataapproveUseAuthorityLayout
         layout: _layout,
         bytes: data,
         instruction: MetaplexTokenMetaDataProgramInstruction
-            .approveUseAuthority.insturction);
+            .approveUseAuthority.instruction);
     return MetaplexTokenMetaDataapproveUseAuthorityLayout(
         numberOfUses: decode["numberOfUses"]);
   }

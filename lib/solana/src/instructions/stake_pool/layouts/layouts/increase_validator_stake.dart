@@ -17,7 +17,7 @@ class StakePoolIncreaseValidatorStakeLayout extends StakePoolProgramLayout {
         layout: _layout,
         bytes: bytes,
         instruction:
-            StakePoolProgramInstruction.increaseValidatorStake.insturction);
+            StakePoolProgramInstruction.increaseValidatorStake.instruction);
     return StakePoolIncreaseValidatorStakeLayout(
       lamports: decode["lamports"],
       transientStakeSeed: decode["transientStakeSeed"],

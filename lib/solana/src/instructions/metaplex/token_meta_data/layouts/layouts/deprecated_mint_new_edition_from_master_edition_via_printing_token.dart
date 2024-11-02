@@ -13,7 +13,7 @@ class MetaplexTokenMetaDataDeprecatedMintNewEditionFromMasterEditionViaPrintingT
         bytes: data,
         instruction: MetaplexTokenMetaDataProgramInstruction
             .deprecatedMintNewEditionFromMasterEditionViaPrintingToken
-            .insturction);
+            .instruction);
     return const MetaplexTokenMetaDataDeprecatedMintNewEditionFromMasterEditionViaPrintingTokenLayout();
   }
 

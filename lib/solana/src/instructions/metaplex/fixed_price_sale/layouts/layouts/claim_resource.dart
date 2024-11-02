@@ -11,7 +11,7 @@ class MetaplexFixedPriceSaleClaimResourceLayout
         layout: _layout,
         bytes: data,
         instruction:
-            MetaplexFixedPriceSaleProgramInstruction.claimResource.insturction);
+            MetaplexFixedPriceSaleProgramInstruction.claimResource.instruction);
     return MetaplexFixedPriceSaleClaimResourceLayout(
         vaultOwnerBump: decode["vaultOwnerBump"]);
   }

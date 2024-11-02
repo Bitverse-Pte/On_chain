@@ -16,7 +16,7 @@ class TokenLendingRepayObligationLiquidityLayout
         layout: _layout,
         bytes: data,
         instruction: TokenLendingProgramInstruction
-            .repayObligationLiquidity.insturction);
+            .repayObligationLiquidity.instruction);
     return TokenLendingRepayObligationLiquidityLayout(
         liquidityAmount: decode["liquidityAmount"]);
   }

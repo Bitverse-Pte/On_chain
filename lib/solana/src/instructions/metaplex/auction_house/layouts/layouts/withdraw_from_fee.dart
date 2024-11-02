@@ -12,7 +12,7 @@ class MetaplexAuctionHouseWithdrawFromFeeLayout
         layout: _layout,
         bytes: data,
         instruction:
-            MetaplexAuctionHouseProgramInstruction.withdrawFromFee.insturction);
+            MetaplexAuctionHouseProgramInstruction.withdrawFromFee.instruction);
     return MetaplexAuctionHouseWithdrawFromFeeLayout(amount: decode["amount"]);
   }
 

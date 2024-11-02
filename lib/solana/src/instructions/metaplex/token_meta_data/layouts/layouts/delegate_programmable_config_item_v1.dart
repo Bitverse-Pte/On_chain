@@ -16,7 +16,7 @@ class MetaplexTokenMetaDataDelegateProgrammableConfigItemV1Layout
         layout: _layout,
         bytes: data,
         instruction: MetaplexTokenMetaDataProgramInstruction
-            .delegateProgrammableConfigItemV1.insturction,
+            .delegateProgrammableConfigItemV1.instruction,
         discriminator: discriminator);
     return MetaplexTokenMetaDataDelegateProgrammableConfigItemV1Layout(
         authorizationData: decode["authorizationData"] == null

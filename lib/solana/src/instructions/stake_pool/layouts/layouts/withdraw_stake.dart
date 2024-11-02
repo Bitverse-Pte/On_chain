@@ -12,7 +12,7 @@ class StakePoolWithdrawStakeLayout extends StakePoolProgramLayout {
     final decode = ProgramLayout.decodeAndValidateStruct(
         layout: _layout,
         bytes: bytes,
-        instruction: StakePoolProgramInstruction.withdrawStake.insturction);
+        instruction: StakePoolProgramInstruction.withdrawStake.instruction);
     return StakePoolWithdrawStakeLayout(poolTokens: decode["poolTokens"]);
   }
 

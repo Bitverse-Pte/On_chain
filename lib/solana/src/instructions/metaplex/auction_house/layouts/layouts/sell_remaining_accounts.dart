@@ -12,7 +12,7 @@ class MetaplexAuctionHouseSellRemainingAccountsLayout
         layout: _layout,
         bytes: data,
         instruction: MetaplexAuctionHouseProgramInstruction
-            .sellRemainingAccounts.insturction);
+            .sellRemainingAccounts.instruction);
     return const MetaplexAuctionHouseSellRemainingAccountsLayout();
   }
 

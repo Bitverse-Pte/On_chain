@@ -13,7 +13,7 @@ class MetaplexTokenMetaDataPrintV1Layout
         layout: _layout,
         bytes: data,
         instruction:
-            MetaplexTokenMetaDataProgramInstruction.printV1.insturction,
+            MetaplexTokenMetaDataProgramInstruction.printV1.instruction,
         discriminator: discriminator);
     return MetaplexTokenMetaDataPrintV1Layout(
         editionNumber: decode["editionNumber"]);

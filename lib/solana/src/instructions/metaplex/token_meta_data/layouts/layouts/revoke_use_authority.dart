@@ -12,7 +12,7 @@ class MetaplexTokenMetaDataRevokeUseAuthorityLayout
         layout: _layout,
         bytes: data,
         instruction: MetaplexTokenMetaDataProgramInstruction
-            .revokeUseAuthority.insturction);
+            .revokeUseAuthority.instruction);
     return const MetaplexTokenMetaDataRevokeUseAuthorityLayout();
   }
 

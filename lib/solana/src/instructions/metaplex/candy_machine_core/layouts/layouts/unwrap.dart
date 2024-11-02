@@ -9,7 +9,7 @@ class MetaplexCandyMachineUnwrapLayout
     MetaplexCandyMachineProgramLayout.decodeAndValidateStruct(
         layout: _layout,
         bytes: data,
-        instruction: MetaplexCandyMachineProgramInstruction.unwrap.insturction);
+        instruction: MetaplexCandyMachineProgramInstruction.unwrap.instruction);
     return const MetaplexCandyMachineUnwrapLayout();
   }
   static final StructLayout _layout =

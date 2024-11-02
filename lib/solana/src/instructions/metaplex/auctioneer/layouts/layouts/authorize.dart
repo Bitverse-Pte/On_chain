@@ -12,7 +12,7 @@ class MetaplexAuctioneerAuthorizeLayout
         layout: _layout,
         bytes: data,
         instruction:
-            MetaplexAuctioneerProgramInstruction.authorize.insturction);
+            MetaplexAuctioneerProgramInstruction.authorize.instruction);
     return const MetaplexAuctioneerAuthorizeLayout();
   }
 

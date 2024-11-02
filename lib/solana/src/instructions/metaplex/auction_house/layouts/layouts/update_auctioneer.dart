@@ -14,7 +14,7 @@ class MetaplexAuctionHouseUpdateAuctioneerLayout
         layout: _layout,
         bytes: data,
         instruction: MetaplexAuctionHouseProgramInstruction
-            .updateAuctioneer.insturction);
+            .updateAuctioneer.instruction);
     return MetaplexAuctionHouseUpdateAuctioneerLayout(
         scopes: (decode["scopes"] as List)
             .map((e) => AuthorityScope.fromValue(e))

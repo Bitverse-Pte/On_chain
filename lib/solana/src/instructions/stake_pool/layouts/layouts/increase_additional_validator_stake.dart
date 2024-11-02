@@ -24,7 +24,7 @@ class StakePoolIncreaseAdditionalValidatorStakeLayout
         layout: _layout,
         bytes: bytes,
         instruction: StakePoolProgramInstruction
-            .increaseAdditionalValidatorStake.insturction);
+            .increaseAdditionalValidatorStake.instruction);
     return StakePoolIncreaseAdditionalValidatorStakeLayout(
       ephemeralStakeSeed: decode["ephemeralStakeSeed"],
       lamports: decode["lamports"],

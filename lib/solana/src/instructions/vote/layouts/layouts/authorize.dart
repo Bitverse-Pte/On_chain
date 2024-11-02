@@ -14,7 +14,7 @@ class VoteProgramAuthorizeLayout extends VoteProgramLayout {
     final decode = ProgramLayout.decodeAndValidateStruct(
         layout: _layout,
         bytes: data,
-        instruction: VoteProgramInstruction.authorize.insturction);
+        instruction: VoteProgramInstruction.authorize.instruction);
     return VoteProgramAuthorizeLayout(
         newAuthorized: decode["newAuthorized"],
         voteAuthorizationType: decode["voteAuthorizationType"]);

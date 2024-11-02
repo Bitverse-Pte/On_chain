@@ -9,7 +9,7 @@ class TokenLendingRefreshReserveLayout extends TokenLendingProgramLayout {
     ProgramLayout.decodeAndValidateStruct(
         layout: _layout,
         bytes: data,
-        instruction: TokenLendingProgramInstruction.refreshReserve.insturction);
+        instruction: TokenLendingProgramInstruction.refreshReserve.instruction);
     return const TokenLendingRefreshReserveLayout();
   }
 

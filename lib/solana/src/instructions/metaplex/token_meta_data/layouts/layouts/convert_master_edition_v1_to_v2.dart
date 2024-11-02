@@ -12,7 +12,7 @@ class MetaplexTokenMetaDataConvertMasterEditionV1ToV2Layout
         layout: _layout,
         bytes: data,
         instruction: MetaplexTokenMetaDataProgramInstruction
-            .convertMasterEditionV1ToV2.insturction);
+            .convertMasterEditionV1ToV2.instruction);
     return const MetaplexTokenMetaDataConvertMasterEditionV1ToV2Layout();
   }
 

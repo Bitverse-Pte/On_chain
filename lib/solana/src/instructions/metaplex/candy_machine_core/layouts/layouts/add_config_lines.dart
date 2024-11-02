@@ -14,7 +14,7 @@ class MetaplexCandyMachineAddConfigLinesLayout
         layout: _layout,
         bytes: data,
         instruction:
-            MetaplexCandyMachineProgramInstruction.addConfigLines.insturction);
+            MetaplexCandyMachineProgramInstruction.addConfigLines.instruction);
     return MetaplexCandyMachineAddConfigLinesLayout(
         configLines: (decode["configLines"] as List)
             .map((e) => ConfigLine.fromJson(e))

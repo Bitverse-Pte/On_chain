@@ -5,11 +5,11 @@ import 'package:on_chain/solana/src/instructions/metaplex/token_meta_data/consta
 class MetaplexTokenMetaDataProgramInstruction
     implements ProgramLayoutInstruction {
   @override
-  final int insturction;
+  final int instruction;
   @override
   final String name;
   final int? discriminator;
-  const MetaplexTokenMetaDataProgramInstruction._(this.insturction, this.name,
+  const MetaplexTokenMetaDataProgramInstruction._(this.instruction, this.name,
       {this.discriminator});
 
   static const MetaplexTokenMetaDataProgramInstruction
@@ -304,7 +304,7 @@ class MetaplexTokenMetaDataProgramInstruction
   ];
 
   bool get hasDiscriminator {
-    return values.where((e) => e.insturction == insturction).length > 1;
+    return values.where((e) => e.instruction == instruction).length > 1;
   }
 
   static MetaplexTokenMetaDataProgramInstruction? getInstruction(dynamic value,
@@ -313,11 +313,11 @@ class MetaplexTokenMetaDataProgramInstruction
       if (discriminator != null) {
         return values.firstWhere(
           (element) =>
-              element.insturction == value &&
+              element.instruction == value &&
               element.discriminator == discriminator,
         );
       }
-      return values.firstWhere((element) => element.insturction == value);
+      return values.firstWhere((element) => element.instruction == value);
     } on StateError {
       return null;
     }

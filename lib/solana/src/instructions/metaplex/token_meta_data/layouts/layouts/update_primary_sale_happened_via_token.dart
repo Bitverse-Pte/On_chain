@@ -12,7 +12,7 @@ class MetaplexTokenMetaDataUpdatePrimarySaleHappenedViaTokenLayout
         layout: _layout,
         bytes: data,
         instruction: MetaplexTokenMetaDataProgramInstruction
-            .updatePrimarySaleHappenedViaToken.insturction);
+            .updatePrimarySaleHappenedViaToken.instruction);
     return const MetaplexTokenMetaDataUpdatePrimarySaleHappenedViaTokenLayout();
   }
 

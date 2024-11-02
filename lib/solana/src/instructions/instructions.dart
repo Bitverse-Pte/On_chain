@@ -11,7 +11,7 @@ export 'stake/stake.dart';
 export 'stake_pool/stake_pool.dart';
 export 'system/system.dart';
 export 'vote/vote.dart';
-export 'custom/custom_program.dart';
+export 'custom/custom.dart';
 export 'token_lending/token_lending.dart';
 export 'metaplex/metaplex.dart';
 export 'associated_token_account/associated_token_accounts.dart';

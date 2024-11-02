@@ -13,7 +13,7 @@ class MetaplexTokenMetaDataCreateMasterEditionV3Layout
         layout: _layout,
         bytes: data,
         instruction: MetaplexTokenMetaDataProgramInstruction
-            .createMasterEditionV3.insturction);
+            .createMasterEditionV3.instruction);
     return MetaplexTokenMetaDataCreateMasterEditionV3Layout(
         maxSupply: decode["maxSupply"]);
   }

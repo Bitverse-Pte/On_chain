@@ -13,7 +13,7 @@ class StakePoolCleanupRemovedValidatorEntriesLayout
         layout: _layout,
         bytes: bytes,
         instruction: StakePoolProgramInstruction
-            .cleanupRemovedValidatorEntries.insturction);
+            .cleanupRemovedValidatorEntries.instruction);
     return const StakePoolCleanupRemovedValidatorEntriesLayout();
   }
   @override

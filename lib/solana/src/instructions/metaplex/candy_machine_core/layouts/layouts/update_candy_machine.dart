@@ -13,7 +13,7 @@ class MetaplexCandyMachineUpdateCandyMachineLayout
         layout: _layout,
         bytes: data,
         instruction: MetaplexCandyMachineProgramInstruction
-            .updateCandyMachine.insturction);
+            .updateCandyMachine.instruction);
     return MetaplexCandyMachineUpdateCandyMachineLayout(
         data: CandyMachineData.fromJson(decode["candyMachineData"]));
   }

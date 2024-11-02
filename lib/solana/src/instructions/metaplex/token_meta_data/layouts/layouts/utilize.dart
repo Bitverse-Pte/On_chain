@@ -12,7 +12,7 @@ class MetaplexTokenMetaDataUtilizeLayout
         layout: _layout,
         bytes: data,
         instruction:
-            MetaplexTokenMetaDataProgramInstruction.utilize.insturction);
+            MetaplexTokenMetaDataProgramInstruction.utilize.instruction);
     return MetaplexTokenMetaDataUtilizeLayout(
         numberOfUses: decode["numberOfUses"]);
   }

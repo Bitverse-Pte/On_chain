@@ -13,7 +13,7 @@ class MetaplexTokenMetaDataRevokeLayout
         layout: _layout,
         bytes: data,
         instruction:
-            MetaplexTokenMetaDataProgramInstruction.revoke.insturction);
+            MetaplexTokenMetaDataProgramInstruction.revoke.instruction);
     return MetaplexTokenMetaDataRevokeLayout(
         revoke: Revoke.fromValue(decode["discriminator"]));
   }

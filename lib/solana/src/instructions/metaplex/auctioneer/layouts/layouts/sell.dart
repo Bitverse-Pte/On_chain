@@ -34,7 +34,7 @@ class MetaplexAuctioneerSellLayout extends MetaplexAuctioneerProgramLayout {
     final decode = MetaplexAuctioneerProgramLayout.decodeAndValidateStruct(
         layout: _layout,
         bytes: data,
-        instruction: MetaplexAuctioneerProgramInstruction.sell.insturction);
+        instruction: MetaplexAuctioneerProgramInstruction.sell.instruction);
     return MetaplexAuctioneerSellLayout(
         tradeStateBump: decode["tradeStateBump"],
         freeTradeStateBump: decode["freeTradeStateBump"],

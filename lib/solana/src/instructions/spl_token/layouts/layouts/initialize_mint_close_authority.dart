@@ -26,7 +26,7 @@ class SPLTokenInitializeMintCloseAuthorityLayout extends SPLTokenProgramLayout {
         layout: _layout,
         bytes: bytes,
         instruction: SPLTokenProgramInstruction
-            .initializeMintCloseAuthority.insturction);
+            .initializeMintCloseAuthority.instruction);
     return SPLTokenInitializeMintCloseAuthorityLayout(
         closeAuthority: decode["closeAuthority"]);
   }

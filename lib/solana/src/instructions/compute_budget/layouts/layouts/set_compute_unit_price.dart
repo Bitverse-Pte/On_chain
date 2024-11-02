@@ -17,7 +17,7 @@ class ComputeBudgetSetComputeUnitPriceLayout
         layout: _layout,
         bytes: data,
         instruction:
-            ComputeBudgetProgramInstruction.setComputeUnitPrice.insturction);
+            ComputeBudgetProgramInstruction.setComputeUnitPrice.instruction);
     return ComputeBudgetSetComputeUnitPriceLayout(
         microLamports: decode["microLamports"]);
   }

@@ -12,7 +12,7 @@ class TokenLendingFlashLoanLayout extends TokenLendingProgramLayout {
     final decode = ProgramLayout.decodeAndValidateStruct(
         layout: _layout,
         bytes: data,
-        instruction: TokenLendingProgramInstruction.flashLoan.insturction);
+        instruction: TokenLendingProgramInstruction.flashLoan.instruction);
     return TokenLendingFlashLoanLayout(
         liquidityAmount: decode["liquidityAmount"]);
   }

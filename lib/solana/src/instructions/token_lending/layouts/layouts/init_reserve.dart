@@ -17,7 +17,7 @@ class TokenLendingInitReserveLayout extends TokenLendingProgramLayout {
     final decode = ProgramLayout.decodeAndValidateStruct(
         layout: _layout,
         bytes: data,
-        instruction: TokenLendingProgramInstruction.initReserve.insturction);
+        instruction: TokenLendingProgramInstruction.initReserve.instruction);
 
     return TokenLendingInitReserveLayout(
         liquidityAmount: decode["liquidityAmount"],

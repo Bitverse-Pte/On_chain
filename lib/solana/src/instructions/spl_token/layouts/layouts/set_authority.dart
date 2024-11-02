@@ -29,7 +29,7 @@ class SPLTokenSetAuthorityLayout extends SPLTokenProgramLayout {
     final decode = ProgramLayout.decodeAndValidateStruct(
         layout: _layout,
         bytes: bytes,
-        instruction: SPLTokenProgramInstruction.setAuthority.insturction);
+        instruction: SPLTokenProgramInstruction.setAuthority.instruction);
     return SPLTokenSetAuthorityLayout(
         authorityType: AuthorityType.fromValue(decode["authorityType"]),
         newAuthority: decode["newAuthority"]);

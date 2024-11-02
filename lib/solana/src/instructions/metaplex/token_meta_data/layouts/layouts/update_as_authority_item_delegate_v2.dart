@@ -27,7 +27,7 @@ class MetaplexTokenMetaDataUpdateAsAuthorityItemDelegateV2Layout
         layout: _layout,
         bytes: data,
         instruction: MetaplexTokenMetaDataProgramInstruction
-            .updateAsAuthorityItemDelegateV2.insturction,
+            .updateAsAuthorityItemDelegateV2.instruction,
         discriminator: discriminator);
     return MetaplexTokenMetaDataUpdateAsAuthorityItemDelegateV2Layout(
         authorizationData: decode["authorizationData"] == null

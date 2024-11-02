@@ -14,7 +14,7 @@ class SystemAuthorizeNonceAccountLayout extends SystemProgramLayout {
         layout: _layout,
         bytes: data,
         instruction:
-            SystemProgramInstruction.authorizeNonceAccount.insturction);
+            SystemProgramInstruction.authorizeNonceAccount.instruction);
     return SystemAuthorizeNonceAccountLayout(authorized: decode["authorized"]);
   }
   static final StructLayout _layout = LayoutConst.struct([

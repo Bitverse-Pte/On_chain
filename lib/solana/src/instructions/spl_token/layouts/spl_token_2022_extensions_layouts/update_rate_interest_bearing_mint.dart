@@ -23,7 +23,7 @@ class SPLToken2022InterestBearingMintUpdateRateLayout
         layout: _layout,
         bytes: bytes,
         instruction: SPLTokenProgramInstruction
-            .interestBearingMintExtension.insturction);
+            .interestBearingMintExtension.instruction);
     return SPLToken2022InterestBearingMintUpdateRateLayout(
         rate: decode["rate"]);
   }

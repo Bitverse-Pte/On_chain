@@ -13,7 +13,7 @@ class AssociatedTokenAccountProgramIdempotentLayout
         layout: _layout,
         bytes: data,
         instruction:
-            AssociatedTokenAccountProgramInstruction.idempotent.insturction);
+            AssociatedTokenAccountProgramInstruction.idempotent.instruction);
     return const AssociatedTokenAccountProgramIdempotentLayout();
   }
   static final StructLayout _layout =

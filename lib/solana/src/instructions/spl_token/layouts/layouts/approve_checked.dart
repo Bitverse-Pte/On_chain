@@ -29,7 +29,7 @@ class SPLTokenApproveCheckedLayout extends SPLTokenProgramLayout {
     final decode = ProgramLayout.decodeAndValidateStruct(
         layout: _layout,
         bytes: bytes,
-        instruction: SPLTokenProgramInstruction.approveChecked.insturction);
+        instruction: SPLTokenProgramInstruction.approveChecked.instruction);
     return SPLTokenApproveCheckedLayout(
         amount: decode["amount"], decimals: decode["decimals"]);
   }

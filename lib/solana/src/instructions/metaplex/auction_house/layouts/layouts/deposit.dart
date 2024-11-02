@@ -14,7 +14,7 @@ class MetaplexAuctionHouseDepositLayout
         layout: _layout,
         bytes: data,
         instruction:
-            MetaplexAuctionHouseProgramInstruction.deposit.insturction);
+            MetaplexAuctionHouseProgramInstruction.deposit.instruction);
     return MetaplexAuctionHouseDepositLayout(
         amount: decode["amount"],
         escrowPaymentBump: decode["escrowPaymentBump"]);

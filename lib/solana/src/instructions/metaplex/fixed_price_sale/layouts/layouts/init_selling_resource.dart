@@ -17,7 +17,7 @@ class MetaplexFixedPriceSaleInitSellingResourceLayout
         layout: _layout,
         bytes: data,
         instruction: MetaplexFixedPriceSaleProgramInstruction
-            .initSellingResource.insturction);
+            .initSellingResource.instruction);
     return MetaplexFixedPriceSaleInitSellingResourceLayout(
         masterEditionBump: decode["masterEditionBump"],
         vaultOwnerBump: decode["vaultOwnerBump"],

@@ -17,7 +17,7 @@ class MetaplexFixedPriceSaleBuyV2Layout
         layout: _layout,
         bytes: data,
         instruction:
-            MetaplexFixedPriceSaleProgramInstruction.buyV2.insturction);
+            MetaplexFixedPriceSaleProgramInstruction.buyV2.instruction);
     return MetaplexFixedPriceSaleBuyV2Layout(
         tradeHistoryBump: decode["tradeHistoryBump"],
         vaultOwnerBump: decode["vaultOwnerBump"],

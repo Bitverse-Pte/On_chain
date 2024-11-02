@@ -9,7 +9,7 @@ class MetaplexNFTPacksDeletePackLayout extends MetaplexNFTPacksProgramLayout {
     ProgramLayout.decodeAndValidateStruct(
         layout: _layout,
         bytes: data,
-        instruction: MetaplexNFTPacksProgramInstruction.deletePack.insturction);
+        instruction: MetaplexNFTPacksProgramInstruction.deletePack.instruction);
     return const MetaplexNFTPacksDeletePackLayout();
   }
 

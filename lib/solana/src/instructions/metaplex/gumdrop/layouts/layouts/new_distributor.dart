@@ -16,7 +16,7 @@ class MetaplexGumdropNewDistributorLayout extends MetaplexGumdropProgramLayout {
         layout: _layout,
         bytes: data,
         instruction:
-            MetaplexGumdropProgramInstruction.newDistributor.insturction);
+            MetaplexGumdropProgramInstruction.newDistributor.instruction);
     return MetaplexGumdropNewDistributorLayout(
         bump: decode["bump"],
         temporal: decode["temporal"],

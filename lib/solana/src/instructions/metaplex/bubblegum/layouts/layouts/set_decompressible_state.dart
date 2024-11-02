@@ -14,7 +14,7 @@ class MetaplexBubblegumSetDecompressibleStateLayout
         layout: _layout,
         bytes: data,
         instruction: MetaplexBubblegumProgramInstruction
-            .setDecompressibleState.insturction);
+            .setDecompressibleState.instruction);
     return MetaplexBubblegumSetDecompressibleStateLayout(
         decompressibleState:
             DecompressibleState.fromValue(decode["decompressableState"]));

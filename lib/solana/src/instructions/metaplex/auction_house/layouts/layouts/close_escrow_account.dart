@@ -14,7 +14,7 @@ class MetaplexAuctionHouseCloseEscrowAccountLayout
         layout: _layout,
         bytes: data,
         instruction: MetaplexAuctionHouseProgramInstruction
-            .closeEscrowAccount.insturction);
+            .closeEscrowAccount.instruction);
     return MetaplexAuctionHouseCloseEscrowAccountLayout(
         escrowPaymentBump: decode["escrowPaymentBump"]);
   }

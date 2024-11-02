@@ -15,7 +15,7 @@ class MetaplexCandyMachineCreateCandyGuardLayout
         layout: _layout,
         bytes: data,
         instruction: MetaplexCandyMachineProgramInstruction
-            .createCandyGuard.insturction);
+            .createCandyGuard.instruction);
     return MetaplexCandyMachineCreateCandyGuardLayout(
         data: (decode["data"] as List).cast());
   }

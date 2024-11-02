@@ -20,7 +20,7 @@ class NameServiceUpdateLayout extends NameServiceProgramLayout {
     Map<String, dynamic> decode = ProgramLayout.decodeAndValidateStruct(
       layout: _layout,
       bytes: data,
-      instruction: NameServiceProgramInstruction.update.insturction,
+      instruction: NameServiceProgramInstruction.update.instruction,
     );
     return NameServiceUpdateLayout(
       inputData: decode["inputData"],

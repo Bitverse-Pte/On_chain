@@ -9,7 +9,7 @@ class TokenLendingInitObligationLayout extends TokenLendingProgramLayout {
     ProgramLayout.decodeAndValidateStruct(
         layout: _layout,
         bytes: data,
-        instruction: TokenLendingProgramInstruction.initObligation.insturction);
+        instruction: TokenLendingProgramInstruction.initObligation.instruction);
     return const TokenLendingInitObligationLayout();
   }
   static final StructLayout _layout =

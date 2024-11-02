@@ -36,7 +36,7 @@ class MetaplexTokenMetaDataUpdateAsUpdateAuthorityV2Layout
         layout: _layout,
         bytes: data,
         instruction: MetaplexTokenMetaDataProgramInstruction
-            .updateAsUpdateAuthorityV2.insturction,
+            .updateAsUpdateAuthorityV2.instruction,
         discriminator: discriminator);
     return MetaplexTokenMetaDataUpdateAsUpdateAuthorityV2Layout(
         collection: CollectionToggle.fromJson(decode["collection"]),

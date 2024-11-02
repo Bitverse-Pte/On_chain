@@ -20,7 +20,7 @@ class SPLTokenMetaDataRemoveFieldLayout extends SPLTokenMetaDataProgramLayout {
         layout: _layout,
         bytes: bytes,
         instructionBytes:
-            SPLTokenMetaDataProgramSplDiscriminate.remove.insturction);
+            SPLTokenMetaDataProgramSplDiscriminate.remove.instruction);
 
     return SPLTokenMetaDataRemoveFieldLayout(
         idempotent: decode["idempotent"], key: decode["key"]);

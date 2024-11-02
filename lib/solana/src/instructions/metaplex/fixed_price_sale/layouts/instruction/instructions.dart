@@ -6,10 +6,10 @@ import 'package:on_chain/solana/src/instructions/metaplex/fixed_price_sale/const
 class MetaplexFixedPriceSaleProgramInstruction
     implements ProgramLayoutInstruction {
   @override
-  final List<int> insturction;
+  final List<int> instruction;
   @override
   final String name;
-  const MetaplexFixedPriceSaleProgramInstruction(this.insturction, this.name);
+  const MetaplexFixedPriceSaleProgramInstruction(this.instruction, this.name);
   static const MetaplexFixedPriceSaleProgramInstruction buy =
       MetaplexFixedPriceSaleProgramInstruction(
           [102, 6, 61, 18, 1, 218, 235, 234], "Buy");
@@ -64,7 +64,7 @@ class MetaplexFixedPriceSaleProgramInstruction
       dynamic value) {
     try {
       return values.firstWhere(
-          (element) => BytesUtils.bytesEqual(element.insturction, value));
+          (element) => BytesUtils.bytesEqual(element.instruction, value));
     } catch (_) {
       return null;
     }

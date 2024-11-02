@@ -15,7 +15,7 @@ class TokenLendingRedeemReserveCollateralLayout
         layout: _layout,
         bytes: data,
         instruction:
-            TokenLendingProgramInstruction.redeemReserveCollateral.insturction);
+            TokenLendingProgramInstruction.redeemReserveCollateral.instruction);
     return TokenLendingRedeemReserveCollateralLayout(
         collateralAmount: decode["collateralAmount"]);
   }

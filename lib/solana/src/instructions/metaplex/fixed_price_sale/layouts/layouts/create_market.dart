@@ -30,7 +30,7 @@ class MetaplexFixedPriceSaleCreateMarketLayout
         layout: _layout,
         bytes: data,
         instruction:
-            MetaplexFixedPriceSaleProgramInstruction.createMarket.insturction);
+            MetaplexFixedPriceSaleProgramInstruction.createMarket.instruction);
     return MetaplexFixedPriceSaleCreateMarketLayout(
         treasuryOwnerBump: decode["treasuryOwnerBump"],
         name: decode["name"],

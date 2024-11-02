@@ -22,7 +22,7 @@ class MetaplexBubblegumBurnLayout extends MetaplexBubblegumProgramLayout {
     final decode = MetaplexBubblegumProgramLayout.decodeAndValidateStruct(
         layout: _layout,
         bytes: data,
-        instruction: MetaplexBubblegumProgramInstruction.burn.insturction);
+        instruction: MetaplexBubblegumProgramInstruction.burn.instruction);
     return MetaplexBubblegumBurnLayout(
         root: decode['root'],
         dataHash: decode["dataHash"],

@@ -11,7 +11,7 @@ class MetaplexTokenMetaDataSignMetadataLayout
         layout: _layout,
         bytes: data,
         instruction:
-            MetaplexTokenMetaDataProgramInstruction.signMetadata.insturction);
+            MetaplexTokenMetaDataProgramInstruction.signMetadata.instruction);
     return const MetaplexTokenMetaDataSignMetadataLayout();
   }
 

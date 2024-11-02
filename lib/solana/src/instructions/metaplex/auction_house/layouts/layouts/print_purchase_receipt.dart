@@ -14,7 +14,7 @@ class MetaplexAuctionHousePrintPurchaseReceiptLayout
         layout: _layout,
         bytes: data,
         instruction: MetaplexAuctionHouseProgramInstruction
-            .printPurchaseReceipt.insturction);
+            .printPurchaseReceipt.instruction);
     return MetaplexAuctionHousePrintPurchaseReceiptLayout(
         purchaseReceiptBump: decode["purchaseReceiptBump"]);
   }

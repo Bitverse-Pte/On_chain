@@ -10,7 +10,7 @@ class MetaplexHydraDistributeWalletLayout extends MetaplexHydraProgramLayout {
         layout: _layout,
         bytes: data,
         instruction: MetaplexHydraProgramInstruction
-            .processDistributeWallet.insturction);
+            .processDistributeWallet.instruction);
     return MetaplexHydraDistributeWalletLayout(
         distributeForMint: decode["distributeForMint"]);
   }

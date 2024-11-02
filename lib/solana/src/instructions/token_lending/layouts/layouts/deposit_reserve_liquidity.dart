@@ -15,7 +15,7 @@ class TokenLendingDepositReserveLiquidityLayout
         layout: _layout,
         bytes: data,
         instruction:
-            TokenLendingProgramInstruction.depositReserveLiquidity.insturction);
+            TokenLendingProgramInstruction.depositReserveLiquidity.instruction);
     return TokenLendingDepositReserveLiquidityLayout(
         liquidityAmount: decode["liquidityAmount"]);
   }

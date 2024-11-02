@@ -12,7 +12,7 @@ class MetaplexTokenMetaDataUnverifyCollectionLayout
         layout: _layout,
         bytes: data,
         instruction: MetaplexTokenMetaDataProgramInstruction
-            .unverifyCollection.insturction);
+            .unverifyCollection.instruction);
     return const MetaplexTokenMetaDataUnverifyCollectionLayout();
   }
 

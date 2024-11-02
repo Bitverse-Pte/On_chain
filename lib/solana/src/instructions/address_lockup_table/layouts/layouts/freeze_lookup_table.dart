@@ -13,7 +13,7 @@ class AddressLookupFreezeLookupTableLayout
         layout: _layout,
         bytes: data,
         instruction:
-            AddressLookupTableProgramInstruction.freezeLookupTable.insturction);
+            AddressLookupTableProgramInstruction.freezeLookupTable.instruction);
     return const AddressLookupFreezeLookupTableLayout();
   }
 

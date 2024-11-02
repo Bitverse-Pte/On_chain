@@ -17,7 +17,7 @@ class MetaplexNFTPacksEditPackLayout extends MetaplexNFTPacksProgramLayout {
     final decode = ProgramLayout.decodeAndValidateStruct(
         layout: _layout,
         bytes: data,
-        instruction: MetaplexNFTPacksProgramInstruction.editPack.insturction);
+        instruction: MetaplexNFTPacksProgramInstruction.editPack.instruction);
     return MetaplexNFTPacksEditPackLayout(
         name: decode["name"],
         desciption: decode["desciption"],

@@ -13,7 +13,7 @@ class MetaplexAuctionHouseWithdrawLayout
         layout: _layout,
         bytes: data,
         instruction:
-            MetaplexAuctionHouseProgramInstruction.withdraw.insturction);
+            MetaplexAuctionHouseProgramInstruction.withdraw.instruction);
     return MetaplexAuctionHouseWithdrawLayout(
         amount: decode["amount"],
         escrowPaymentBump: decode["escrowPaymentBump"]);

@@ -39,7 +39,7 @@ class TokenLendingInitLendingMarketLayout extends TokenLendingProgramLayout {
         layout: _layout,
         bytes: data,
         instruction:
-            TokenLendingProgramInstruction.initLendingMarket.insturction);
+            TokenLendingProgramInstruction.initLendingMarket.instruction);
     return TokenLendingInitLendingMarketLayout(
         quoteCurrency: decode["quoteCurrency"], owner: decode["owner"]);
   }

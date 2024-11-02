@@ -18,7 +18,7 @@ class SPLTokenInitializeImmutableOwnerLayout extends SPLTokenProgramLayout {
         layout: _layout,
         bytes: bytes,
         instruction:
-            SPLTokenProgramInstruction.initializeImmutableOwner.insturction);
+            SPLTokenProgramInstruction.initializeImmutableOwner.instruction);
     return SPLTokenInitializeImmutableOwnerLayout();
   }
 

@@ -14,7 +14,7 @@ class AddressLookupDeactiveLookupTableLayout
         layout: _layout,
         bytes: data,
         instruction: AddressLookupTableProgramInstruction
-            .deactivateLookupTable.insturction);
+            .deactivateLookupTable.instruction);
     return const AddressLookupDeactiveLookupTableLayout();
   }
 

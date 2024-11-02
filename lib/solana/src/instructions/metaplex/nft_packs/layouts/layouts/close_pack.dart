@@ -9,7 +9,7 @@ class MetaplexNFTPacksClosePackLayout extends MetaplexNFTPacksProgramLayout {
     ProgramLayout.decodeAndValidateStruct(
         layout: _layout,
         bytes: data,
-        instruction: MetaplexNFTPacksProgramInstruction.closePack.insturction);
+        instruction: MetaplexNFTPacksProgramInstruction.closePack.instruction);
     return const MetaplexNFTPacksClosePackLayout();
   }
 

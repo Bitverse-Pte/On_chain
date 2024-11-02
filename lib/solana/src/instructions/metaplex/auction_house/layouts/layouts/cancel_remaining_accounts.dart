@@ -12,7 +12,7 @@ class MetaplexAuctionHouseCancelRemainingAccountsLayout
         layout: _layout,
         bytes: data,
         instruction: MetaplexAuctionHouseProgramInstruction
-            .cancelRemainingAccounts.insturction);
+            .cancelRemainingAccounts.instruction);
     return const MetaplexAuctionHouseCancelRemainingAccountsLayout();
   }
 

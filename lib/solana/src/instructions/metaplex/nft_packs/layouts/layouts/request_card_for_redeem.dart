@@ -13,7 +13,7 @@ class MetaplexNFTPacksRequestCardForRedeemLayout
         layout: _layout,
         bytes: data,
         instruction: MetaplexNFTPacksProgramInstruction
-            .requestCardForRedeem.insturction);
+            .requestCardForRedeem.instruction);
     return MetaplexNFTPacksRequestCardForRedeemLayout(index: decode["index"]);
   }
 

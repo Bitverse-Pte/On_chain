@@ -13,7 +13,7 @@ class MetaplexBubblegumCancelRedeemLayout
         layout: _layout,
         bytes: data,
         instruction:
-            MetaplexBubblegumProgramInstruction.cancelRedeem.insturction);
+            MetaplexBubblegumProgramInstruction.cancelRedeem.instruction);
     return MetaplexBubblegumCancelRedeemLayout(root: decode["root"]);
   }
 

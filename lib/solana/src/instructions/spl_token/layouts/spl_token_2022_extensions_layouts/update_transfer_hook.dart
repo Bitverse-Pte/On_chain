@@ -15,7 +15,7 @@ class SPLToken2022UpdateTransferHookLayout extends SPLTokenProgramLayout {
     final decode = ProgramLayout.decodeAndValidateStruct(
       layout: _layout,
       bytes: bytes,
-      instruction: SPLTokenProgramInstruction.transferHookExtension.insturction,
+      instruction: SPLTokenProgramInstruction.transferHookExtension.instruction,
     );
     return SPLToken2022UpdateTransferHookLayout(
         transferHookProgramId: decode["transferHookProgramId"]);

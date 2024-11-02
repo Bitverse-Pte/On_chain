@@ -24,7 +24,7 @@ class MetaplexTokenMetaDataUpdateMetadataAccountV2Layout
         layout: _layout,
         bytes: data,
         instruction: MetaplexTokenMetaDataProgramInstruction
-            .updateMetadataAccountV2.insturction);
+            .updateMetadataAccountV2.instruction);
     return MetaplexTokenMetaDataUpdateMetadataAccountV2Layout(
         data:
             decode["data"] == null ? null : MetaDataV2.fromJson(decode["data"]),

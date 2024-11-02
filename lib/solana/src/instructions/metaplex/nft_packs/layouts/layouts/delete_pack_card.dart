@@ -11,7 +11,7 @@ class MetaplexNFTPacksDeletePackCardLayout
         layout: _layout,
         bytes: data,
         instruction:
-            MetaplexNFTPacksProgramInstruction.deletePackCard.insturction);
+            MetaplexNFTPacksProgramInstruction.deletePackCard.instruction);
     return const MetaplexNFTPacksDeletePackCardLayout();
   }
 

@@ -13,7 +13,7 @@ class MetaplexTokenMetaDataTransferOutOfEscrowLayout
         layout: _layout,
         bytes: data,
         instruction: MetaplexTokenMetaDataProgramInstruction
-            .transferOutOfEscrow.insturction);
+            .transferOutOfEscrow.instruction);
     return MetaplexTokenMetaDataTransferOutOfEscrowLayout(
         amount: decode["amount"]);
   }

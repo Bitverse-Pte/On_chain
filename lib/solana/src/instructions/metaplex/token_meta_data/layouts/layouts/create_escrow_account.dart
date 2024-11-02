@@ -12,7 +12,7 @@ class MetaplexTokenMetaDataCreateEscrowAccountLayout
         layout: _layout,
         bytes: data,
         instruction: MetaplexTokenMetaDataProgramInstruction
-            .createEscrowAccount.insturction);
+            .createEscrowAccount.instruction);
     return const MetaplexTokenMetaDataCreateEscrowAccountLayout();
   }
 

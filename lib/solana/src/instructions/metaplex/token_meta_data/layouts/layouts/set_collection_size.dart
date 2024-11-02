@@ -13,7 +13,7 @@ class MetaplexTokenMetaDataSetCollectionSizeLayout
         layout: _layout,
         bytes: data,
         instruction: MetaplexTokenMetaDataProgramInstruction
-            .setCollectionSize.insturction);
+            .setCollectionSize.instruction);
     return MetaplexTokenMetaDataSetCollectionSizeLayout(size: decode["size"]);
   }
 

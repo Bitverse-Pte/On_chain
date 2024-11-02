@@ -11,7 +11,7 @@ class MetaplexNFTPacksDeletePackConfigLayout
         layout: _layout,
         bytes: data,
         instruction:
-            MetaplexNFTPacksProgramInstruction.deletePackConfig.insturction);
+            MetaplexNFTPacksProgramInstruction.deletePackConfig.instruction);
     return const MetaplexNFTPacksDeletePackConfigLayout();
   }
 

@@ -23,7 +23,7 @@ class SPLTokenSwapWithdrawSingleTokenLayout extends SPLTokenSwapProgramLayout {
       layout: _layout,
       bytes: bytes,
       instruction:
-          SPLTokenSwapProgramInstruction.withdrawSingleToken.insturction,
+          SPLTokenSwapProgramInstruction.withdrawSingleToken.instruction,
     );
 
     return SPLTokenSwapWithdrawSingleTokenLayout(

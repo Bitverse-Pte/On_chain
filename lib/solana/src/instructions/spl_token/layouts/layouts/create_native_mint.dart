@@ -17,7 +17,7 @@ class SPLTokenCreateNativeMintLayout extends SPLTokenProgramLayout {
     ProgramLayout.decodeAndValidateStruct(
         layout: _layout,
         bytes: bytes,
-        instruction: SPLTokenProgramInstruction.createNativeMint.insturction);
+        instruction: SPLTokenProgramInstruction.createNativeMint.instruction);
     return SPLTokenCreateNativeMintLayout();
   }
 

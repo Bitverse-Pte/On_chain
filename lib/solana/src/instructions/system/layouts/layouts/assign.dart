@@ -18,7 +18,7 @@ class SystemAssignLayout extends SystemProgramLayout {
     final decode = ProgramLayout.decodeAndValidateStruct(
         layout: _layout,
         bytes: data,
-        instruction: SystemProgramInstruction.assign.insturction);
+        instruction: SystemProgramInstruction.assign.instruction);
     return SystemAssignLayout(programId: decode["programId"]);
   }
 

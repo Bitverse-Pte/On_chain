@@ -10,7 +10,7 @@ class VoteProgramWithdrawLayout extends VoteProgramLayout {
     final decode = ProgramLayout.decodeAndValidateStruct(
         layout: _layout,
         bytes: data,
-        instruction: VoteProgramInstruction.withdraw.insturction);
+        instruction: VoteProgramInstruction.withdraw.instruction);
     return VoteProgramWithdrawLayout(lamports: decode["lamports"]);
   }
   static final StructLayout _layout = LayoutConst.struct([

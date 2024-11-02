@@ -12,7 +12,7 @@ class MetaplexTokenMetaDataSetAndVerifySizedCollectionItemLayout
         layout: _layout,
         bytes: data,
         instruction: MetaplexTokenMetaDataProgramInstruction
-            .setAndVerifySizedCollectionItem.insturction);
+            .setAndVerifySizedCollectionItem.instruction);
     return const MetaplexTokenMetaDataSetAndVerifySizedCollectionItemLayout();
   }
 

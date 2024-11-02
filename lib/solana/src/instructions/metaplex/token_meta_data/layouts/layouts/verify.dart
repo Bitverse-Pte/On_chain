@@ -15,7 +15,7 @@ class MetaplexTokenMetaDataVerifyCollectionV1Layout
         layout: _layout,
         bytes: data,
         instruction: MetaplexTokenMetaDataProgramInstruction
-            .verifyCollectionV1.insturction);
+            .verifyCollectionV1.instruction);
     return MetaplexTokenMetaDataVerifyCollectionV1Layout(
         verification: Verification.fromValue(decode["discriminator"]));
   }

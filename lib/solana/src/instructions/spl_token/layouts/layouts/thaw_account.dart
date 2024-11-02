@@ -17,7 +17,7 @@ class SPLTokenThawAccountLayout extends SPLTokenProgramLayout {
     ProgramLayout.decodeAndValidateStruct(
         layout: _layout,
         bytes: bytes,
-        instruction: SPLTokenProgramInstruction.thawAccount.insturction);
+        instruction: SPLTokenProgramInstruction.thawAccount.instruction);
     return SPLTokenThawAccountLayout();
   }
 

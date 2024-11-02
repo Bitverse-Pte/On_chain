@@ -22,7 +22,7 @@ class SPLToken2022InitializeGroupMemberPointerLayout
       layout: _layout,
       bytes: bytes,
       instruction:
-          SPLTokenProgramInstruction.groupMemberPointerExtension.insturction,
+          SPLTokenProgramInstruction.groupMemberPointerExtension.instruction,
     );
     return SPLToken2022InitializeGroupMemberPointerLayout(
         authority: decode["authority"] == SolAddress.defaultPubKey

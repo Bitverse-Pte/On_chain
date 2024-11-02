@@ -10,7 +10,7 @@ class MetaplexHydraAddMemberWalletLayout extends MetaplexHydraProgramLayout {
         layout: _layout,
         bytes: data,
         instruction:
-            MetaplexHydraProgramInstruction.processAddMemberWallet.insturction);
+            MetaplexHydraProgramInstruction.processAddMemberWallet.instruction);
     return MetaplexHydraAddMemberWalletLayout(shares: decode["shares"]);
   }
 

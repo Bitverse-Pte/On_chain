@@ -13,7 +13,7 @@ class MetaplexFixedPriceSaleCreateStoreLayout
         layout: _layout,
         bytes: data,
         instruction:
-            MetaplexFixedPriceSaleProgramInstruction.createStore.insturction);
+            MetaplexFixedPriceSaleProgramInstruction.createStore.instruction);
     return MetaplexFixedPriceSaleCreateStoreLayout(
         name: decode["name"], description: decode["description"]);
   }

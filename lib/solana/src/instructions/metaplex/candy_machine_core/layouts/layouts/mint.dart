@@ -13,7 +13,7 @@ class MetaplexCandyMachineMintLayout extends MetaplexCandyMachineProgramLayout {
     final decode = MetaplexCandyMachineProgramLayout.decodeAndValidateStruct(
         layout: _layout,
         bytes: data,
-        instruction: MetaplexCandyMachineProgramInstruction.mint.insturction);
+        instruction: MetaplexCandyMachineProgramInstruction.mint.instruction);
     return MetaplexCandyMachineMintLayout(
         mintArgs: (decode["mintArgs"] as List).cast(), group: decode["group"]);
   }

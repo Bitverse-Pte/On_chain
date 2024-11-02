@@ -16,7 +16,7 @@ class MetaplexCandyMachineSetCandyGuardAuthorityLayout
         layout: _layout,
         bytes: data,
         instruction: MetaplexCandyMachineProgramInstruction
-            .setCandyGuardAuthority.insturction);
+            .setCandyGuardAuthority.instruction);
     return MetaplexCandyMachineSetCandyGuardAuthorityLayout(
         newAuthority: decode["newAuthority"]);
   }

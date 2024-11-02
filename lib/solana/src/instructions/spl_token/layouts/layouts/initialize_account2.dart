@@ -24,7 +24,7 @@ class SPLTokenInitializeAccount2Layout extends SPLTokenProgramLayout {
     final decode = ProgramLayout.decodeAndValidateStruct(
         layout: _layout,
         bytes: bytes,
-        instruction: SPLTokenProgramInstruction.initializeAccount2.insturction);
+        instruction: SPLTokenProgramInstruction.initializeAccount2.instruction);
     return SPLTokenInitializeAccount2Layout(owner: decode["owner"]);
   }
 

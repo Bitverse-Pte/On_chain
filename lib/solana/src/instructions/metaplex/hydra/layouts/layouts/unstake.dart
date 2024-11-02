@@ -9,7 +9,7 @@ class MetaplexHydraUnstakeLayout extends MetaplexHydraProgramLayout {
         layout: _layout,
         bytes: data,
         instruction:
-            MetaplexHydraProgramInstruction.processUnstake.insturction);
+            MetaplexHydraProgramInstruction.processUnstake.instruction);
     return const MetaplexHydraUnstakeLayout();
   }
 

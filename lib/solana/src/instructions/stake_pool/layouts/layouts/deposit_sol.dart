@@ -11,7 +11,7 @@ class StakePoolDepositSolLayout extends StakePoolProgramLayout {
     final decode = ProgramLayout.decodeAndValidateStruct(
         layout: _layout,
         bytes: bytes,
-        instruction: StakePoolProgramInstruction.depositSol.insturction);
+        instruction: StakePoolProgramInstruction.depositSol.instruction);
     return StakePoolDepositSolLayout(lamports: decode["lamports"]);
   }
 

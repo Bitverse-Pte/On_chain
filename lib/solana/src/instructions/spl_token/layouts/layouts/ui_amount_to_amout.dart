@@ -24,7 +24,7 @@ class SPLTokenUiAmountToAmountLayout extends SPLTokenProgramLayout {
     final decode = ProgramLayout.decodeAndValidateStruct(
         layout: _layout(length),
         bytes: bytes,
-        instruction: SPLTokenProgramInstruction.uiAmountToAmount.insturction);
+        instruction: SPLTokenProgramInstruction.uiAmountToAmount.instruction);
     return SPLTokenUiAmountToAmountLayout(
         amount: StringUtils.decode(decode["amount"]));
   }

@@ -5,10 +5,10 @@ import 'package:on_chain/solana/src/instructions/metaplex/auctioneer/constant.da
 
 class MetaplexAuctioneerProgramInstruction implements ProgramLayoutInstruction {
   @override
-  final List<int> insturction;
+  final List<int> instruction;
   @override
   final String name;
-  const MetaplexAuctioneerProgramInstruction(this.insturction, this.name);
+  const MetaplexAuctioneerProgramInstruction(this.instruction, this.name);
   static const MetaplexAuctioneerProgramInstruction authorize =
       MetaplexAuctioneerProgramInstruction(
           [173, 193, 102, 210, 219, 137, 113, 120], "Authorize");
@@ -43,7 +43,7 @@ class MetaplexAuctioneerProgramInstruction implements ProgramLayoutInstruction {
   static MetaplexAuctioneerProgramInstruction? getInstruction(dynamic value) {
     try {
       return values.firstWhere(
-          (element) => BytesUtils.bytesEqual(element.insturction, value));
+          (element) => BytesUtils.bytesEqual(element.instruction, value));
     } catch (_) {
       return null;
     }

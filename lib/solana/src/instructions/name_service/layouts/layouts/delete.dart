@@ -12,7 +12,7 @@ class NameServiceDeleteLayout extends NameServiceProgramLayout {
     ProgramLayout.decodeAndValidateStruct(
       layout: _layout,
       bytes: data,
-      instruction: NameServiceProgramInstruction.delete.insturction,
+      instruction: NameServiceProgramInstruction.delete.instruction,
     );
     return const NameServiceDeleteLayout();
   }

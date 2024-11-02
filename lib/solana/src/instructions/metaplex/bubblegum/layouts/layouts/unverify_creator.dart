@@ -27,7 +27,7 @@ class MetaplexBubblegumUnverifyCreatorLayout
         layout: _layout,
         bytes: data,
         instruction:
-            MetaplexBubblegumProgramInstruction.unverifyCreator.insturction);
+            MetaplexBubblegumProgramInstruction.unverifyCreator.instruction);
     return MetaplexBubblegumUnverifyCreatorLayout(
         root: decode["root"],
         dataHash: decode["dataHash"],

@@ -31,7 +31,7 @@ class SPLTokenMetaDataInitializeLayout extends SPLTokenMetaDataProgramLayout {
             layout: staticLayout,
             bytes: data,
             instructionBytes:
-                SPLTokenMetaDataProgramSplDiscriminate.initialize.insturction);
+                SPLTokenMetaDataProgramSplDiscriminate.initialize.instruction);
     return SPLTokenMetaDataInitializeLayout(
         name: decode["name"], uri: decode["uri"], symbol: decode["symbol"]);
   }

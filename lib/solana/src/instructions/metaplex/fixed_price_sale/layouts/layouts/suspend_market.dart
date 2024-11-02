@@ -10,7 +10,7 @@ class MetaplexFixedPriceSaleSuspendMarketLayout
         layout: _layout,
         bytes: data,
         instruction:
-            MetaplexFixedPriceSaleProgramInstruction.suspendMarket.insturction);
+            MetaplexFixedPriceSaleProgramInstruction.suspendMarket.instruction);
     return MetaplexFixedPriceSaleSuspendMarketLayout();
   }
 

@@ -17,7 +17,7 @@ class SPLTokenFreezAccountLayout extends SPLTokenProgramLayout {
     ProgramLayout.decodeAndValidateStruct(
         layout: _layout,
         bytes: bytes,
-        instruction: SPLTokenProgramInstruction.freezeAccount.insturction);
+        instruction: SPLTokenProgramInstruction.freezeAccount.instruction);
     return SPLTokenFreezAccountLayout();
   }
 

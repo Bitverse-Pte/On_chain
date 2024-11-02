@@ -17,7 +17,7 @@ class StakePoolDecreaseValidatorStakeLayout extends StakePoolProgramLayout {
         layout: _layout,
         bytes: bytes,
         instruction:
-            StakePoolProgramInstruction.decreaseValidatorStake.insturction);
+            StakePoolProgramInstruction.decreaseValidatorStake.instruction);
     return StakePoolDecreaseValidatorStakeLayout(
       lamports: decode["lamports"],
       transientStakeSeed: decode["transientStakeSeed"],

@@ -14,7 +14,7 @@ class MetaplexGumdropRecoverUpdateAuthorityLayout
         layout: _layout,
         bytes: data,
         instruction: MetaplexGumdropProgramInstruction
-            .recoverUpdateAuthority.insturction);
+            .recoverUpdateAuthority.instruction);
     return MetaplexGumdropRecoverUpdateAuthorityLayout(
         walletBump: decode["walletBump"], bump: decode["bump"]);
   }

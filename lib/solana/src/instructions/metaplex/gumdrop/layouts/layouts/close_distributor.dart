@@ -13,7 +13,7 @@ class MetaplexGumdropCloseDistributorLayout
         layout: _layout,
         bytes: data,
         instruction:
-            MetaplexGumdropProgramInstruction.closeDistributor.insturction);
+            MetaplexGumdropProgramInstruction.closeDistributor.instruction);
     return MetaplexGumdropCloseDistributorLayout(
         walletBump: decode["walletBump"], bump: decode["bump"]);
   }

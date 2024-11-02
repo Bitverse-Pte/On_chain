@@ -23,7 +23,7 @@ class AddressLookupCreateLookupTableLayout
         layout: _layout,
         bytes: data,
         instruction:
-            AddressLookupTableProgramInstruction.createLookupTable.insturction);
+            AddressLookupTableProgramInstruction.createLookupTable.instruction);
     return AddressLookupCreateLookupTableLayout(
         recentSlot: decode["recentSlot"], bumpSeed: decode["bumpSeed"]);
   }

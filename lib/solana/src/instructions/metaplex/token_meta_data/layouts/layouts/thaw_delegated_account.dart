@@ -12,7 +12,7 @@ class MetaplexTokenMetaDataThawDelegatedAccountLayout
         layout: _layout,
         bytes: data,
         instruction: MetaplexTokenMetaDataProgramInstruction
-            .thawDelegatedAccount.insturction);
+            .thawDelegatedAccount.instruction);
     return const MetaplexTokenMetaDataThawDelegatedAccountLayout();
   }
 

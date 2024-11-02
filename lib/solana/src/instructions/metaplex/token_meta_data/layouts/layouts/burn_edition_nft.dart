@@ -11,7 +11,7 @@ class MetaplexTokenMetaDataBurnEditionNftLayout
         layout: _layout,
         bytes: data,
         instruction:
-            MetaplexTokenMetaDataProgramInstruction.burnEditionNft.insturction);
+            MetaplexTokenMetaDataProgramInstruction.burnEditionNft.instruction);
     return const MetaplexTokenMetaDataBurnEditionNftLayout();
   }
 

@@ -14,7 +14,7 @@ class MetaplexTokenMetaDataCreateMetadataAccountV2Layout
         layout: _layout,
         bytes: data,
         instruction: MetaplexTokenMetaDataProgramInstruction
-            .createMetadataAccountV2.insturction);
+            .createMetadataAccountV2.instruction);
     return const MetaplexTokenMetaDataCreateMetadataAccountV2Layout();
   }
 

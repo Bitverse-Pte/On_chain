@@ -11,7 +11,7 @@ class MetaplexTokenMetaDataMigrateLayout
         layout: _layout,
         bytes: data,
         instruction:
-            MetaplexTokenMetaDataProgramInstruction.migrate.insturction);
+            MetaplexTokenMetaDataProgramInstruction.migrate.instruction);
     return const MetaplexTokenMetaDataMigrateLayout();
   }
 

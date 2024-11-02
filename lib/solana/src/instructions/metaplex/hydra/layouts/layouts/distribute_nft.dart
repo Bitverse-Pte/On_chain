@@ -10,7 +10,7 @@ class MetaplexHydraDistributeNftLayout extends MetaplexHydraProgramLayout {
         layout: _layout,
         bytes: data,
         instruction:
-            MetaplexHydraProgramInstruction.processDistributeNft.insturction);
+            MetaplexHydraProgramInstruction.processDistributeNft.instruction);
     return MetaplexHydraDistributeNftLayout(
         distributeForMint: decode["distributeForMint"]);
   }

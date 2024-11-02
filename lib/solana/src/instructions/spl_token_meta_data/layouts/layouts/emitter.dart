@@ -18,7 +18,7 @@ class SPLTokenMetaDataEmitLayout extends SPLTokenMetaDataProgramLayout {
         layout: _layout,
         bytes: bytes,
         instructionBytes:
-            SPLTokenMetaDataProgramSplDiscriminate.emit.insturction);
+            SPLTokenMetaDataProgramSplDiscriminate.emit.instruction);
 
     return SPLTokenMetaDataEmitLayout(
         end: decode["end"], start: decode["start"]);

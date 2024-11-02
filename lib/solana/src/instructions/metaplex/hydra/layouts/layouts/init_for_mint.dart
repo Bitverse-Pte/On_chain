@@ -10,7 +10,7 @@ class MetaplexHydraInitForMintLayout extends MetaplexHydraProgramLayout {
         layout: _layout,
         bytes: data,
         instruction:
-            MetaplexHydraProgramInstruction.processInitForMint.insturction);
+            MetaplexHydraProgramInstruction.processInitForMint.instruction);
     return MetaplexHydraInitForMintLayout(bumpSeed: decode["bumpSeed"]);
   }
 

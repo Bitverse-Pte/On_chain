@@ -16,7 +16,7 @@ class MetaplexAuctioneerWithdrawLayout extends MetaplexAuctioneerProgramLayout {
     final decode = MetaplexAuctioneerProgramLayout.decodeAndValidateStruct(
         layout: _layout,
         bytes: data,
-        instruction: MetaplexAuctioneerProgramInstruction.withdraw.insturction);
+        instruction: MetaplexAuctioneerProgramInstruction.withdraw.instruction);
     return MetaplexAuctioneerWithdrawLayout(
         escrowPaymentBump: decode["escrowPaymentBump"],
         auctioneerAuthorityBump: decode["auctioneerAuthorityBump"],

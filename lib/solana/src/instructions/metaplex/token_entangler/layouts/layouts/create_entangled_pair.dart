@@ -23,7 +23,7 @@ class MetaplexTokenEntanglerCreateEntangledPairLayout
         layout: _layout,
         bytes: data,
         instruction: MetaplexTokenEntanglerProgramInstruction
-            .createEntangledPair.insturction);
+            .createEntangledPair.instruction);
     return MetaplexTokenEntanglerCreateEntangledPairLayout(
         bump: decode["bump"],
         reverseBump: decode["reverseBump"],

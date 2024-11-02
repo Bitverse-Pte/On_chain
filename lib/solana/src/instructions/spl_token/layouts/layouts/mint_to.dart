@@ -22,7 +22,7 @@ class SPLTokenMintToLayout extends SPLTokenProgramLayout {
     final decode = ProgramLayout.decodeAndValidateStruct(
         layout: _layout,
         bytes: bytes,
-        instruction: SPLTokenProgramInstruction.mintTo.insturction);
+        instruction: SPLTokenProgramInstruction.mintTo.instruction);
 
     return SPLTokenMintToLayout(amount: decode["amount"]);
   }

@@ -9,7 +9,7 @@ class MetaplexTokenEntanglerSwapLayout
     MetaplexTokenEntanglerProgramLayout.decodeAndValidateStruct(
         layout: _layout,
         bytes: data,
-        instruction: MetaplexTokenEntanglerProgramInstruction.swap.insturction);
+        instruction: MetaplexTokenEntanglerProgramInstruction.swap.instruction);
     return const MetaplexTokenEntanglerSwapLayout();
   }
 

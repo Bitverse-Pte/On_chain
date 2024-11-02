@@ -12,7 +12,7 @@ class MetaplexGumdropCloseDistributorTokenAccountLayout
         layout: _layout,
         bytes: data,
         instruction: MetaplexGumdropProgramInstruction
-            .closeDistributorTokenAccount.insturction);
+            .closeDistributorTokenAccount.instruction);
     return MetaplexGumdropCloseDistributorTokenAccountLayout(
         bump: decode["bump"]);
   }

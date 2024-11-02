@@ -10,7 +10,7 @@ class SystemAdvanceNonceLayout extends SystemProgramLayout {
     ProgramLayout.decodeAndValidateStruct(
         layout: _layout,
         bytes: data,
-        instruction: SystemProgramInstruction.advanceNonceAccount.insturction);
+        instruction: SystemProgramInstruction.advanceNonceAccount.instruction);
     return const SystemAdvanceNonceLayout();
   }
 

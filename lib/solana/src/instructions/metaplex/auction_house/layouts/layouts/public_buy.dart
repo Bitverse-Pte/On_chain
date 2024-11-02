@@ -19,7 +19,7 @@ class MetaplexAuctionHousePublicBuyLayout
         layout: _layout,
         bytes: data,
         instruction:
-            MetaplexAuctionHouseProgramInstruction.publicBuy.insturction);
+            MetaplexAuctionHouseProgramInstruction.publicBuy.instruction);
     return MetaplexAuctionHousePublicBuyLayout(
         tradeStateBump: decode["tradeStateBump"],
         escrowPaymentBump: decode["escrowPaymentBump"],

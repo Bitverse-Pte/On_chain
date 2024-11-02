@@ -26,7 +26,7 @@ class StakeInitializeLayout extends StakeProgramLayout {
     final decode = ProgramLayout.decodeAndValidateStruct(
         layout: _layout,
         bytes: data,
-        instruction: StakeProgramInstruction.initialize.insturction);
+        instruction: StakeProgramInstruction.initialize.instruction);
     return StakeInitializeLayout(
         authorized: StakeAuthorized.fromJson(decode["authorized"]),
         lockup: StakeLockup.fromJson(decode["lockup"]));

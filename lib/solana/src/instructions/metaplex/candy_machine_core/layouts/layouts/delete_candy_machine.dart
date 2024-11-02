@@ -12,7 +12,7 @@ class MetaplexCandyMachineDeleteCandyMachineLayout
         layout: _layout,
         bytes: data,
         instruction: MetaplexCandyMachineProgramInstruction
-            .deleteCandyMachine.insturction);
+            .deleteCandyMachine.instruction);
     return const MetaplexCandyMachineDeleteCandyMachineLayout();
   }
 

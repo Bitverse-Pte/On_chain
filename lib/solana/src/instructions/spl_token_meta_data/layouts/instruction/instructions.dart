@@ -5,10 +5,10 @@ import 'package:on_chain/solana/src/borsh_serialization/program_layout.dart';
 class SPLTokenMetaDataProgramSplDiscriminate
     implements ProgramLayoutInstruction {
   @override
-  final List<int> insturction;
+  final List<int> instruction;
   @override
   final String name;
-  const SPLTokenMetaDataProgramSplDiscriminate(this.insturction, this.name);
+  const SPLTokenMetaDataProgramSplDiscriminate(this.instruction, this.name);
   static const SPLTokenMetaDataProgramSplDiscriminate initialize =
       SPLTokenMetaDataProgramSplDiscriminate(
           [210, 225, 30, 162, 88, 184, 77, 141], "Initialize");
@@ -34,7 +34,7 @@ class SPLTokenMetaDataProgramSplDiscriminate
   static SPLTokenMetaDataProgramSplDiscriminate? getInstruction(dynamic value) {
     try {
       return values.firstWhere(
-          (element) => BytesUtils.bytesEqual(value, element.insturction));
+          (element) => BytesUtils.bytesEqual(value, element.instruction));
     } catch (_) {
       return null;
     }

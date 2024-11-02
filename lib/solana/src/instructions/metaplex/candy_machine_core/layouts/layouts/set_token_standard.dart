@@ -14,7 +14,7 @@ class MetaplexCandyMachineSetTokenStandardLayout
         layout: _layout,
         bytes: data,
         instruction: MetaplexCandyMachineProgramInstruction
-            .setTokenStandard.insturction);
+            .setTokenStandard.instruction);
     return MetaplexCandyMachineSetTokenStandardLayout(
         tokenStandard: MetaDataTokenStandard.fromJson(decode["tokenStandard"]));
   }

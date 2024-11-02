@@ -23,7 +23,7 @@ class MetaplexGumdropClaimLayout extends MetaplexGumdropProgramLayout {
     final decode = MetaplexGumdropProgramLayout.decodeAndValidateStruct(
         layout: _layout,
         bytes: data,
-        instruction: MetaplexGumdropProgramInstruction.claim.insturction);
+        instruction: MetaplexGumdropProgramInstruction.claim.instruction);
     return MetaplexGumdropClaimLayout(
         bump: decode["bump"],
         index: decode["index"],

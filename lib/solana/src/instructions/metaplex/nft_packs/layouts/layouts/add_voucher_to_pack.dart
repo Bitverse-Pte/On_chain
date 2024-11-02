@@ -11,7 +11,7 @@ class MetaplexNFTPacksAddVoucherToPackLayout
         layout: _layout,
         bytes: data,
         instruction:
-            MetaplexNFTPacksProgramInstruction.addVoucherToPack.insturction);
+            MetaplexNFTPacksProgramInstruction.addVoucherToPack.instruction);
     return const MetaplexNFTPacksAddVoucherToPackLayout();
   }
 

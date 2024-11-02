@@ -13,7 +13,7 @@ class AssociatedTokenAccountProgramInitializeLayout
         layout: _layout,
         bytes: data,
         instruction:
-            AssociatedTokenAccountProgramInstruction.initialize.insturction);
+            AssociatedTokenAccountProgramInstruction.initialize.instruction);
     return const AssociatedTokenAccountProgramInitializeLayout();
   }
   static final StructLayout _layout = LayoutConst.struct([]);

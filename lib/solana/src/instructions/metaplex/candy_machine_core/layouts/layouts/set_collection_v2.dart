@@ -10,7 +10,7 @@ class MetaplexCandyMachineSetCollectionV2Layout
         layout: _layout,
         bytes: data,
         instruction:
-            MetaplexCandyMachineProgramInstruction.setCollectionV2.insturction);
+            MetaplexCandyMachineProgramInstruction.setCollectionV2.instruction);
     return const MetaplexCandyMachineSetCollectionV2Layout();
   }
   static final StructLayout _layout =

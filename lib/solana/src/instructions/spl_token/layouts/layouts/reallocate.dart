@@ -22,7 +22,7 @@ class SPLTokenReallocateLayout extends SPLTokenProgramLayout {
     final decode = ProgramLayout.decodeAndValidateStruct(
         layout: _layout(length: length),
         bytes: bytes,
-        instruction: SPLTokenProgramInstruction.reallocate.insturction);
+        instruction: SPLTokenProgramInstruction.reallocate.instruction);
 
     return SPLTokenReallocateLayout(
         extensionTypes: (decode["extensionTypes"] as List)

@@ -24,7 +24,7 @@ class SPLTokenBurnLayout extends SPLTokenProgramLayout {
     final decode = ProgramLayout.decodeAndValidateStruct(
         layout: _layout,
         bytes: bytes,
-        instruction: SPLTokenProgramInstruction.burn.insturction);
+        instruction: SPLTokenProgramInstruction.burn.instruction);
     return SPLTokenBurnLayout(amount: decode["amount"]);
   }
 

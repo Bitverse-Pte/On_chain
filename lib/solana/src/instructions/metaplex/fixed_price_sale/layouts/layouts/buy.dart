@@ -12,7 +12,7 @@ class MetaplexFixedPriceSaleBuyLayout
     final decode = MetaplexFixedPriceSaleProgramLayout.decodeAndValidateStruct(
         layout: _layout,
         bytes: data,
-        instruction: MetaplexFixedPriceSaleProgramInstruction.buy.insturction);
+        instruction: MetaplexFixedPriceSaleProgramInstruction.buy.instruction);
     return MetaplexFixedPriceSaleBuyLayout(
         tradeHistoryBump: decode["tradeHistoryBump"],
         vaultOwnerBump: decode["vaultOwnerBump"]);

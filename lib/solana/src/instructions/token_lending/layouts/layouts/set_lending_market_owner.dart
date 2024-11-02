@@ -16,7 +16,7 @@ class TokenLendingSetLendingMarketOwnerLayout
         layout: _layout,
         bytes: data,
         instruction:
-            TokenLendingProgramInstruction.setLendingMarketOwner.insturction);
+            TokenLendingProgramInstruction.setLendingMarketOwner.instruction);
     return TokenLendingSetLendingMarketOwnerLayout(newOwner: decode["owner"]);
   }
   static final StructLayout _layout = LayoutConst.struct([

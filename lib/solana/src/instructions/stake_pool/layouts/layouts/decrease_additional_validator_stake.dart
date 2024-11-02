@@ -24,7 +24,7 @@ class StakePoolDecreaseAdditionalValidatorStakeLayout
         layout: _layout,
         bytes: bytes,
         instruction: StakePoolProgramInstruction
-            .decreaseAdditionalValidatorStake.insturction);
+            .decreaseAdditionalValidatorStake.instruction);
     return StakePoolDecreaseAdditionalValidatorStakeLayout(
       ephemeralStakeSeed: decode["ephemeralStakeSeed"],
       lamports: decode["lamports"],

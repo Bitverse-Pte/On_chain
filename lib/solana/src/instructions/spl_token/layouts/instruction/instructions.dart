@@ -3,10 +3,10 @@ import 'package:on_chain/solana/src/borsh_serialization/program_layout.dart';
 
 class SPLTokenProgramInstruction implements ProgramLayoutInstruction {
   @override
-  final dynamic insturction;
+  final dynamic instruction;
   @override
   final String name;
-  const SPLTokenProgramInstruction(this.insturction, this.name);
+  const SPLTokenProgramInstruction(this.instruction, this.name);
   static const SPLTokenProgramInstruction initializeMint =
       SPLTokenProgramInstruction(0, "InitializeMint");
   static const SPLTokenProgramInstruction initializeAccount =
@@ -137,7 +137,7 @@ class SPLTokenProgramInstruction implements ProgramLayoutInstruction {
   ];
   static SPLTokenProgramInstruction? getInstruction(dynamic value) {
     try {
-      return values.firstWhere((element) => element.insturction == value);
+      return values.firstWhere((element) => element.instruction == value);
     } on StateError {
       return null;
     }

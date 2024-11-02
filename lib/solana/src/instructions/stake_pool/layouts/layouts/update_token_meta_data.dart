@@ -46,7 +46,7 @@ class StakePoolUpdateTokenMetaDataLayout extends StakePoolProgramLayout {
         layout: StakePoolCreateTokenMetaDataLayout.staticLayout,
         bytes: data,
         instruction:
-            StakePoolProgramInstruction.updateTokenMetaData.insturction);
+            StakePoolProgramInstruction.updateTokenMetaData.instruction);
 
     return StakePoolUpdateTokenMetaDataLayout(
         name: decode["name"], uri: decode["uri"], symbol: decode["symbol"]);

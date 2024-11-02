@@ -17,7 +17,7 @@ class MetaplexTokenMetaDataDelegateStakingV1Layout
         layout: _layout,
         bytes: data,
         instruction: MetaplexTokenMetaDataProgramInstruction
-            .delegateStakingV1.insturction,
+            .delegateStakingV1.instruction,
         discriminator: discriminator);
     return MetaplexTokenMetaDataDelegateStakingV1Layout(
         authorizationData: decode["authorizationData"] == null

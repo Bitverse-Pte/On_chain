@@ -12,7 +12,7 @@ class MetaplexTokenMetaDataSetTokenStandardLayout
         layout: _layout,
         bytes: data,
         instruction: MetaplexTokenMetaDataProgramInstruction
-            .setTokenStandard.insturction);
+            .setTokenStandard.instruction);
     return const MetaplexTokenMetaDataSetTokenStandardLayout();
   }
 

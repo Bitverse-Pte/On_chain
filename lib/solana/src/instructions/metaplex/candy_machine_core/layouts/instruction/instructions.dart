@@ -6,10 +6,10 @@ import 'package:on_chain/solana/src/instructions/metaplex/candy_machine_core/con
 class MetaplexCandyMachineProgramInstruction
     implements ProgramLayoutInstruction {
   @override
-  final List<int> insturction;
+  final List<int> instruction;
   @override
   final String name;
-  const MetaplexCandyMachineProgramInstruction(this.insturction, this.name);
+  const MetaplexCandyMachineProgramInstruction(this.instruction, this.name);
 
   static const MetaplexCandyMachineProgramInstruction addConfigLines =
       MetaplexCandyMachineProgramInstruction(
@@ -104,7 +104,7 @@ class MetaplexCandyMachineProgramInstruction
   static MetaplexCandyMachineProgramInstruction? getInstruction(dynamic value) {
     try {
       return values.firstWhere(
-          (element) => BytesUtils.bytesEqual(element.insturction, value));
+          (element) => BytesUtils.bytesEqual(element.instruction, value));
     } catch (_) {
       return null;
     }

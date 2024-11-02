@@ -12,7 +12,7 @@ class MetaplexTokenMetaDataCreateMasterEditionLayout
         layout: _layout,
         bytes: data,
         instruction: MetaplexTokenMetaDataProgramInstruction
-            .createMasterEdition.insturction);
+            .createMasterEdition.instruction);
     return const MetaplexTokenMetaDataCreateMasterEditionLayout();
   }
   static final StructLayout _layout =

@@ -21,7 +21,7 @@ class MetaplexAuctionHouseExecuteSaleLayout
         layout: _layout,
         bytes: data,
         instruction:
-            MetaplexAuctionHouseProgramInstruction.executeSale.insturction);
+            MetaplexAuctionHouseProgramInstruction.executeSale.instruction);
     return MetaplexAuctionHouseExecuteSaleLayout(
         escrowPaymentBump: decode["escrowPaymentBump"],
         freeTradeStateBump: decode["freeTradeStateBump"],

@@ -8,7 +8,7 @@ class MetaplexBubblegumCompressLayout extends MetaplexBubblegumProgramLayout {
     MetaplexBubblegumProgramLayout.decodeAndValidateStruct(
         layout: _layout,
         bytes: data,
-        instruction: MetaplexBubblegumProgramInstruction.compress.insturction);
+        instruction: MetaplexBubblegumProgramInstruction.compress.instruction);
     return const MetaplexBubblegumCompressLayout();
   }
 

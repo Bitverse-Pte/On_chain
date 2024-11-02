@@ -16,7 +16,7 @@ class TokenLendingDepositObligationCollateralLayout
         layout: _layout,
         bytes: data,
         instruction: TokenLendingProgramInstruction
-            .depositObligationCollateral.insturction);
+            .depositObligationCollateral.instruction);
     return TokenLendingDepositObligationCollateralLayout(
         collateralAmount: decode["collateralAmount"]);
   }

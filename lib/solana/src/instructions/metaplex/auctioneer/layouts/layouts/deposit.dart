@@ -15,7 +15,7 @@ class MetaplexAuctioneerDepositLayout extends MetaplexAuctioneerProgramLayout {
     final decode = MetaplexAuctioneerProgramLayout.decodeAndValidateStruct(
         layout: _layout,
         bytes: data,
-        instruction: MetaplexAuctioneerProgramInstruction.deposit.insturction);
+        instruction: MetaplexAuctioneerProgramInstruction.deposit.instruction);
     return MetaplexAuctioneerDepositLayout(
         amount: decode["amount"],
         auctioneerAuthorityBump: decode["auctioneerAuthorityBump"],

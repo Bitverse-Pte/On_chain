@@ -19,7 +19,7 @@ class StakePoolDecreaseValidatorStakeWithReserveLayout
         layout: _layout,
         bytes: bytes,
         instruction: StakePoolProgramInstruction
-            .decreaseValidatorStakeWithReserve.insturction);
+            .decreaseValidatorStakeWithReserve.instruction);
     return StakePoolDecreaseValidatorStakeWithReserveLayout(
       lamports: decode["lamports"],
       transientStakeSeed: decode["transientStakeSeed"],

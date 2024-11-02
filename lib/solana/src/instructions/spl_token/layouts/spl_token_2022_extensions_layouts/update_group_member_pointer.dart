@@ -16,7 +16,7 @@ class SPLToken2022UpdateGroupMemberPointerLayout extends SPLTokenProgramLayout {
       layout: _layout,
       bytes: bytes,
       instruction:
-          SPLTokenProgramInstruction.groupMemberPointerExtension.insturction,
+          SPLTokenProgramInstruction.groupMemberPointerExtension.instruction,
     );
     return SPLToken2022UpdateGroupMemberPointerLayout(
         memberAddress: decode["memberAddress"] == SolAddress.defaultPubKey

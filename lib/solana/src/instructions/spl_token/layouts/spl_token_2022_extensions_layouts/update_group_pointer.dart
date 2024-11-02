@@ -14,7 +14,7 @@ class SPLToken2022UpdateGroupPointerLayout extends SPLTokenProgramLayout {
     final decode = ProgramLayout.decodeAndValidateStruct(
       layout: _layout,
       bytes: bytes,
-      instruction: SPLTokenProgramInstruction.groupPointerExtension.insturction,
+      instruction: SPLTokenProgramInstruction.groupPointerExtension.instruction,
     );
     return SPLToken2022UpdateGroupPointerLayout(
         groupAddress: decode["groupAddress"] == SolAddress.defaultPubKey

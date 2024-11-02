@@ -16,7 +16,7 @@ class MetaplexAuctioneerCancelLayout extends MetaplexAuctioneerProgramLayout {
     final decode = MetaplexAuctioneerProgramLayout.decodeAndValidateStruct(
         layout: _layout,
         bytes: data,
-        instruction: MetaplexAuctioneerProgramInstruction.cancel.insturction);
+        instruction: MetaplexAuctioneerProgramInstruction.cancel.instruction);
     return MetaplexAuctioneerCancelLayout(
         auctioneerAuthorityBump: decode["auctioneerAuthorityBump"],
         buyerPrice: decode["buyerPrice"],

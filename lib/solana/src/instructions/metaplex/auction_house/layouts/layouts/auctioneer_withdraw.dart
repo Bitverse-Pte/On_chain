@@ -15,7 +15,7 @@ class MetaplexAuctionHouseAuctioneerWithdrawLayout
         layout: _layout,
         bytes: data,
         instruction: MetaplexAuctionHouseProgramInstruction
-            .auctioneerWithdraw.insturction);
+            .auctioneerWithdraw.instruction);
     return MetaplexAuctionHouseAuctioneerWithdrawLayout(
         escrowPaymentBump: decode["escrowPaymentBump"],
         amount: decode["amount"]);

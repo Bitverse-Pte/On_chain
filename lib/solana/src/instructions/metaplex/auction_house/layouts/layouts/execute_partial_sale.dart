@@ -26,7 +26,7 @@ class MetaplexAuctionHouseExecutePartialSaleLayout
         layout: _layout,
         bytes: data,
         instruction: MetaplexAuctionHouseProgramInstruction
-            .executePartialSale.insturction);
+            .executePartialSale.instruction);
     return MetaplexAuctionHouseExecutePartialSaleLayout(
         escrowPaymentBump: decode["escrowPaymentBump"],
         freeTradeStateBump: decode["freeTradeStateBump"],

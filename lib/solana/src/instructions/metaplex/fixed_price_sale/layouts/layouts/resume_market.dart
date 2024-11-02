@@ -10,7 +10,7 @@ class MetaplexFixedPriceSaleResumeMarketLayout
         layout: _layout,
         bytes: data,
         instruction:
-            MetaplexFixedPriceSaleProgramInstruction.resumeMarket.insturction);
+            MetaplexFixedPriceSaleProgramInstruction.resumeMarket.instruction);
     return MetaplexFixedPriceSaleResumeMarketLayout();
   }
 

@@ -12,7 +12,7 @@ class SPLToken2022HarvestWithheldTokensToMintLayout
     ProgramLayout.decodeAndValidateStruct(
       layout: _layout,
       bytes: bytes,
-      instruction: SPLTokenProgramInstruction.transferFeeExtension.insturction,
+      instruction: SPLTokenProgramInstruction.transferFeeExtension.instruction,
     );
     return SPLToken2022HarvestWithheldTokensToMintLayout();
   }

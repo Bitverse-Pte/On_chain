@@ -18,7 +18,7 @@ class SPLTokenMetaDataUpdateLayout extends SPLTokenMetaDataProgramLayout {
             layout: _layout,
             bytes: bytes,
             instructionBytes:
-                SPLTokenMetaDataProgramSplDiscriminate.update.insturction);
+                SPLTokenMetaDataProgramSplDiscriminate.update.instruction);
 
     return SPLTokenMetaDataUpdateLayout(
         field: SPLTokenMetaDataField.fromJson(decode["metaDataField"]));

@@ -17,7 +17,7 @@ class SPLTokenCloseAccountLayout extends SPLTokenProgramLayout {
     ProgramLayout.decodeAndValidateStruct(
         layout: _layout,
         bytes: bytes,
-        instruction: SPLTokenProgramInstruction.closeAccount.insturction);
+        instruction: SPLTokenProgramInstruction.closeAccount.instruction);
     return SPLTokenCloseAccountLayout();
   }
 

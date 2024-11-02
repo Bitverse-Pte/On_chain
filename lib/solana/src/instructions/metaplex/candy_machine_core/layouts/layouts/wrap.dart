@@ -8,7 +8,7 @@ class MetaplexCandyMachineWrapLayout extends MetaplexCandyMachineProgramLayout {
     MetaplexCandyMachineProgramLayout.decodeAndValidateStruct(
         layout: _layout,
         bytes: data,
-        instruction: MetaplexCandyMachineProgramInstruction.wrap.insturction);
+        instruction: MetaplexCandyMachineProgramInstruction.wrap.instruction);
     return const MetaplexCandyMachineWrapLayout();
   }
   static final StructLayout _layout =

@@ -17,7 +17,7 @@ class SPLTokenRevokeLayout extends SPLTokenProgramLayout {
     ProgramLayout.decodeAndValidateStruct(
         layout: _layout,
         bytes: bytes,
-        instruction: SPLTokenProgramInstruction.revoke.insturction);
+        instruction: SPLTokenProgramInstruction.revoke.instruction);
     return SPLTokenRevokeLayout();
   }
 

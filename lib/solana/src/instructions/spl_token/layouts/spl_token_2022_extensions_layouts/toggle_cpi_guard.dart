@@ -19,7 +19,7 @@ class SPLToken2022ToggleCpiGuardLayout extends SPLTokenProgramLayout {
     final decode = ProgramLayout.decodeAndValidateStruct(
         layout: _layout,
         bytes: bytes,
-        instruction: SPLTokenProgramInstruction.cpiGuardExtension.insturction);
+        instruction: SPLTokenProgramInstruction.cpiGuardExtension.instruction);
     return SPLToken2022ToggleCpiGuardLayout(
         guard: CpiGuardInstructionInstruction.fromJson(decode["guard"]));
   }

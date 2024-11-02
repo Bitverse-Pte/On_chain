@@ -18,7 +18,7 @@ class MetaplexTokenMetaDataUpdateAsCollectionDelegateV2Layout
         layout: _layout,
         bytes: data,
         instruction: MetaplexTokenMetaDataProgramInstruction
-            .updateAsCollectionDelegateV2.insturction);
+            .updateAsCollectionDelegateV2.instruction);
     return MetaplexTokenMetaDataUpdateAsCollectionDelegateV2Layout(
         collection: CollectionToggle.fromJson(decode["collection"]),
         authorizationData: decode["authorizationData"] == null

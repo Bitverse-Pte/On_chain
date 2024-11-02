@@ -12,7 +12,7 @@ class SystemAllocateLayout extends SystemProgramLayout {
     final decode = ProgramLayout.decodeAndValidateStruct(
         layout: _layout,
         bytes: data,
-        instruction: SystemProgramInstruction.allocate.insturction);
+        instruction: SystemProgramInstruction.allocate.instruction);
     return SystemAllocateLayout(space: decode["space"]);
   }
   static final StructLayout _layout = LayoutConst.struct([

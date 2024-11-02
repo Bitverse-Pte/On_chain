@@ -22,7 +22,7 @@ class SPLTokenApproveLayout extends SPLTokenProgramLayout {
     final decode = ProgramLayout.decodeAndValidateStruct(
         layout: _layout,
         bytes: bytes,
-        instruction: SPLTokenProgramInstruction.approve.insturction);
+        instruction: SPLTokenProgramInstruction.approve.instruction);
     return SPLTokenApproveLayout(amount: decode["amount"]);
   }
 

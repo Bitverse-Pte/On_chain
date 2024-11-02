@@ -23,7 +23,7 @@ class SPLTokenSwapDepositSingleTokenLayout extends SPLTokenSwapProgramLayout {
       layout: _layout,
       bytes: bytes,
       instruction:
-          SPLTokenSwapProgramInstruction.depositSingleToken.insturction,
+          SPLTokenSwapProgramInstruction.depositSingleToken.instruction,
     );
 
     return SPLTokenSwapDepositSingleTokenLayout(

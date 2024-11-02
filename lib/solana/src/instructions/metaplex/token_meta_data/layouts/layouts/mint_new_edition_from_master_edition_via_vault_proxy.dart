@@ -14,7 +14,7 @@ class MetaplexTokenMetaDataMintNewEditionFromMasterEditionViaVaultProxyLayout
         layout: _layout,
         bytes: data,
         instruction: MetaplexTokenMetaDataProgramInstruction
-            .mintNewEditionFromMasterEditionViaVaultProxy.insturction);
+            .mintNewEditionFromMasterEditionViaVaultProxy.instruction);
     return MetaplexTokenMetaDataMintNewEditionFromMasterEditionViaVaultProxyLayout(
         edition: decode["edition"]);
   }

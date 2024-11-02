@@ -6,10 +6,10 @@ import 'package:on_chain/solana/src/instructions/metaplex/token_entangler/consta
 class MetaplexTokenEntanglerProgramInstruction
     implements ProgramLayoutInstruction {
   @override
-  final List<int> insturction;
+  final List<int> instruction;
   @override
   final String name;
-  const MetaplexTokenEntanglerProgramInstruction(this.insturction, this.name);
+  const MetaplexTokenEntanglerProgramInstruction(this.instruction, this.name);
   static const MetaplexTokenEntanglerProgramInstruction createEntangledPair =
       MetaplexTokenEntanglerProgramInstruction(
           [166, 106, 32, 45, 156, 210, 209, 240], "CreateEntangledPair");
@@ -29,7 +29,7 @@ class MetaplexTokenEntanglerProgramInstruction
       dynamic value) {
     try {
       return values.firstWhere(
-          (element) => BytesUtils.bytesEqual(element.insturction, value));
+          (element) => BytesUtils.bytesEqual(element.instruction, value));
     } catch (_) {
       return null;
     }

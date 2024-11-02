@@ -5,10 +5,10 @@ import 'package:on_chain/solana/src/instructions/metaplex/hydra/constant.dart';
 
 class MetaplexHydraProgramInstruction implements ProgramLayoutInstruction {
   @override
-  final List<int> insturction;
+  final List<int> instruction;
   @override
   final String name;
-  const MetaplexHydraProgramInstruction(this.insturction, this.name);
+  const MetaplexHydraProgramInstruction(this.instruction, this.name);
   static const MetaplexHydraProgramInstruction processAddMemberNft =
       MetaplexHydraProgramInstruction(
           [92, 255, 105, 209, 25, 41, 3, 7], "ProcessAddMemberNft");
@@ -67,7 +67,7 @@ class MetaplexHydraProgramInstruction implements ProgramLayoutInstruction {
   static MetaplexHydraProgramInstruction? getInstruction(dynamic value) {
     try {
       return values.firstWhere(
-          (element) => BytesUtils.bytesEqual(element.insturction, value));
+          (element) => BytesUtils.bytesEqual(element.instruction, value));
     } catch (_) {
       return null;
     }

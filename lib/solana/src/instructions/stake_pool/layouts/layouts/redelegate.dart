@@ -27,7 +27,7 @@ class StakePoolReDelegateLayout extends StakePoolProgramLayout {
     final decode = ProgramLayout.decodeAndValidateStruct(
         layout: _layout,
         bytes: bytes,
-        instruction: StakePoolProgramInstruction.redelegate.insturction);
+        instruction: StakePoolProgramInstruction.redelegate.instruction);
     return StakePoolReDelegateLayout(
         lamports: decode["lamports"],
         sourceTransientStakeSeed: decode["sourceTransientStakeSeed"],

@@ -22,7 +22,7 @@ class MetaplexBubblegumRedeemLayout extends MetaplexBubblegumProgramLayout {
     final decode = MetaplexBubblegumProgramLayout.decodeAndValidateStruct(
         layout: _layout,
         bytes: data,
-        instruction: MetaplexBubblegumProgramInstruction.redeem.insturction);
+        instruction: MetaplexBubblegumProgramInstruction.redeem.instruction);
     return MetaplexBubblegumRedeemLayout(
         root: decode['root'],
         dataHash: decode["dataHash"],

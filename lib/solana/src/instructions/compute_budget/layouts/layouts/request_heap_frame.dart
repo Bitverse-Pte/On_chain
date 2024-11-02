@@ -16,7 +16,7 @@ class ComputeBudgetRequestHeapFrameLayout extends ComputeBudgetProgramLayout {
         layout: _layout,
         bytes: data,
         instruction:
-            ComputeBudgetProgramInstruction.requestHeapFrame.insturction);
+            ComputeBudgetProgramInstruction.requestHeapFrame.instruction);
     return ComputeBudgetRequestHeapFrameLayout(bytes: decode["bytes"]);
   }
   // StructLayout layout definition.

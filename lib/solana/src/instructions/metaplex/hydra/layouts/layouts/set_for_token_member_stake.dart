@@ -11,7 +11,7 @@ class MetaplexHydraSetForTokenMemberStakeLayout
         layout: _layout,
         bytes: data,
         instruction: MetaplexHydraProgramInstruction
-            .processSetForTokenMemberStake.insturction);
+            .processSetForTokenMemberStake.instruction);
     return MetaplexHydraSetForTokenMemberStakeLayout(shares: decode["shares"]);
   }
 

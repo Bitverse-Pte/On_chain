@@ -23,7 +23,7 @@ class SPLToken2022TransferCheckedWithFeeLayout extends SPLTokenProgramLayout {
         layout: _layout,
         bytes: bytes,
         instruction:
-            SPLTokenProgramInstruction.transferFeeExtension.insturction);
+            SPLTokenProgramInstruction.transferFeeExtension.instruction);
     return SPLToken2022TransferCheckedWithFeeLayout(
         amount: decode["amount"],
         decimals: decode["decimals"],

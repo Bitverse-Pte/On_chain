@@ -19,7 +19,7 @@ class SPLTokenMetaDataUpdateAuthorityLayout
         layout: _layout,
         bytes: bytes,
         instructionBytes:
-            SPLTokenMetaDataProgramSplDiscriminate.updateAuthority.insturction);
+            SPLTokenMetaDataProgramSplDiscriminate.updateAuthority.instruction);
     // Extract the new authority from the decoded data.
     final SolAddress newAuthority = decode["new_authority"];
     // Return a new instance of [SPLTokenMetaDataUpdateAuthorityLayout].

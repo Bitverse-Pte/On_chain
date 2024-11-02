@@ -47,7 +47,7 @@ class MetaplexTokenMetaDataCreateV1Layout
         layout: _layout,
         bytes: data,
         instruction:
-            MetaplexTokenMetaDataProgramInstruction.createV1.insturction);
+            MetaplexTokenMetaDataProgramInstruction.createV1.instruction);
     return MetaplexTokenMetaDataCreateV1Layout(
         name: decode["name"],
         symbol: decode["symbol"],

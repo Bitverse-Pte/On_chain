@@ -19,7 +19,7 @@ class MetaplexAuctionHouseAuctioneerBuyLayout
         layout: _layout,
         bytes: data,
         instruction:
-            MetaplexAuctionHouseProgramInstruction.auctioneerBuy.insturction);
+            MetaplexAuctionHouseProgramInstruction.auctioneerBuy.instruction);
     return MetaplexAuctionHouseAuctioneerBuyLayout(
         buyerPrice: decode["buyerPrice"],
         escrowPaymentBump: decode["escrowPaymentBump"],

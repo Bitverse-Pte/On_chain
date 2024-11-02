@@ -31,7 +31,7 @@ class StakeAuthorizeWithSeedLayout extends StakeProgramLayout {
     final decode = ProgramLayout.decodeAndValidateStruct(
         layout: _layout,
         bytes: data,
-        instruction: StakeProgramInstruction.authorizeWithSeed.insturction);
+        instruction: StakeProgramInstruction.authorizeWithSeed.instruction);
     return StakeAuthorizeWithSeedLayout(
         newAuthorized: decode["newAuthorized"],
         stakeAuthorizationType: decode["stakeAuthorizationType"],

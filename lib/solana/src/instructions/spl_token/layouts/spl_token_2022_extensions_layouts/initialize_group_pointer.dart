@@ -18,7 +18,7 @@ class SPLToken2022InitializeGroupPointerLayout extends SPLTokenProgramLayout {
     final decode = ProgramLayout.decodeAndValidateStruct(
       layout: _layout,
       bytes: bytes,
-      instruction: SPLTokenProgramInstruction.groupPointerExtension.insturction,
+      instruction: SPLTokenProgramInstruction.groupPointerExtension.instruction,
     );
     return SPLToken2022InitializeGroupPointerLayout(
       authority: decode["authority"] == SolAddress.defaultPubKey

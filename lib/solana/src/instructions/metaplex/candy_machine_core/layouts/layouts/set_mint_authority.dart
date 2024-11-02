@@ -11,7 +11,7 @@ class MetaplexCandyMachineSetMintAuthorityLayout
         layout: _layout,
         bytes: data,
         instruction: MetaplexCandyMachineProgramInstruction
-            .setMintAuthority.insturction);
+            .setMintAuthority.instruction);
     return const MetaplexCandyMachineSetMintAuthorityLayout();
   }
   static final StructLayout _layout =

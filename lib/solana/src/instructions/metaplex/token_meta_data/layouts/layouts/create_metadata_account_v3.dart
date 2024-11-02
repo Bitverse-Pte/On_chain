@@ -21,7 +21,7 @@ class MetaplexTokenMetaDataCreateMetadataAccountV3Layout
         layout: _layout,
         bytes: data,
         instruction: MetaplexTokenMetaDataProgramInstruction
-            .createMetadataAccountV3.insturction);
+            .createMetadataAccountV3.instruction);
     return MetaplexTokenMetaDataCreateMetadataAccountV3Layout(
         metaDataV2: MetaDataV2.fromJson(decode["metaDataV2"]),
         isMutable: decode["isMutable"],

@@ -21,7 +21,7 @@ class ComputeBudgetRequestUnitsLayout extends ComputeBudgetProgramLayout {
     final decode = ProgramLayout.decodeAndValidateStruct(
         layout: _layout,
         bytes: data,
-        instruction: ComputeBudgetProgramInstruction.requestUnits.insturction);
+        instruction: ComputeBudgetProgramInstruction.requestUnits.instruction);
     return ComputeBudgetRequestUnitsLayout(
       units: decode["units"],
       additionalFee: decode["additionalFee"],

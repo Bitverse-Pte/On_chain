@@ -40,7 +40,7 @@ class SPLToken2022InitializeTransferFeeConfigLayout
         layout: _layout,
         bytes: bytes,
         instruction:
-            SPLTokenProgramInstruction.transferFeeExtension.insturction);
+            SPLTokenProgramInstruction.transferFeeExtension.instruction);
     return SPLToken2022InitializeTransferFeeConfigLayout(
         transferFeeConfigAuthority: decode["transferFeeConfigAuthority"],
         withdrawWithheldAuthority: decode["withdrawWithheldAuthority"],

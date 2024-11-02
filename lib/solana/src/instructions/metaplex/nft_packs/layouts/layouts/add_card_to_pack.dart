@@ -13,7 +13,7 @@ class MetaplexNFTPacksAddCardToPackLayout
         layout: _layout,
         bytes: data,
         instruction:
-            MetaplexNFTPacksProgramInstruction.addCardToPack.insturction);
+            MetaplexNFTPacksProgramInstruction.addCardToPack.instruction);
     return MetaplexNFTPacksAddCardToPackLayout(
         addCardToPack: AddCardToPack.fromJson(decode["addCardToPack"]));
   }

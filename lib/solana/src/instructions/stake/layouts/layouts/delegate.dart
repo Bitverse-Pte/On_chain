@@ -9,7 +9,7 @@ class StakeDelegateLayout extends StakeProgramLayout {
     ProgramLayout.decodeAndValidateStruct(
         layout: _layout,
         bytes: data,
-        instruction: StakeProgramInstruction.delegate.insturction);
+        instruction: StakeProgramInstruction.delegate.instruction);
     return const StakeDelegateLayout();
   }
   @override

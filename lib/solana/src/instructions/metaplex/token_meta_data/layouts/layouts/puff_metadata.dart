@@ -11,7 +11,7 @@ class MetaplexTokenMetaDataPuffMetadataLayout
         layout: _layout,
         bytes: data,
         instruction:
-            MetaplexTokenMetaDataProgramInstruction.puffMetadata.insturction);
+            MetaplexTokenMetaDataProgramInstruction.puffMetadata.instruction);
     return const MetaplexTokenMetaDataPuffMetadataLayout();
   }
 

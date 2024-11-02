@@ -25,7 +25,7 @@ abstract class ProgramLayout extends LayoutSerializable {
   @override
   List<int> toBytes() {
     return layout
-        .serialize({"instruction": instruction.insturction, ...serialize()});
+        .serialize({"instruction": instruction.instruction, ...serialize()});
   }
 
   /// Converts the program to a hexadecimal string.

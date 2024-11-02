@@ -36,7 +36,7 @@ class SPLTokenInitializeMintLayout extends SPLTokenProgramLayout {
     final decode = ProgramLayout.decodeAndValidateStruct(
         layout: staticLayout,
         bytes: bytes,
-        instruction: SPLTokenProgramInstruction.initializeMint.insturction);
+        instruction: SPLTokenProgramInstruction.initializeMint.instruction);
     return SPLTokenInitializeMintLayout(
       freezeAuthority: decode["freezeAuthority"],
       decimals: decode["decimals"],

@@ -12,7 +12,7 @@ class MetaplexTokenMetaDataRemoveCreatorVerificationLayout
         layout: _layout,
         bytes: data,
         instruction: MetaplexTokenMetaDataProgramInstruction
-            .removeCreatorVerification.insturction);
+            .removeCreatorVerification.instruction);
     return const MetaplexTokenMetaDataRemoveCreatorVerificationLayout();
   }
 

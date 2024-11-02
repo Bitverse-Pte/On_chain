@@ -17,7 +17,7 @@ class TokenLendingWithdrawObligationCollateralLayout
         layout: _layout,
         bytes: data,
         instruction: TokenLendingProgramInstruction
-            .withdrawObligationCollateral.insturction);
+            .withdrawObligationCollateral.instruction);
     return TokenLendingWithdrawObligationCollateralLayout(
         collateralAmount: decode["collateralAmount"]);
   }

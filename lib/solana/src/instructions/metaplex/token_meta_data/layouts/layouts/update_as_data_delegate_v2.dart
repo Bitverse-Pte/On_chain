@@ -18,7 +18,7 @@ class MetaplexTokenMetaDataUpdateAsDataDelegateV2Layout
         layout: _layout,
         bytes: data,
         instruction: MetaplexTokenMetaDataProgramInstruction
-            .updateAsDataDelegateV2.insturction,
+            .updateAsDataDelegateV2.instruction,
         discriminator: discriminator);
     return MetaplexTokenMetaDataUpdateAsDataDelegateV2Layout(
         data: MetaDataData.fromJson(decode["metaDataData"]),

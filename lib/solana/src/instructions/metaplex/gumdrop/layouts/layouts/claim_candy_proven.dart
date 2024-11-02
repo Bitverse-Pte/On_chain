@@ -14,7 +14,7 @@ class MetaplexGumdropClaimCandyProvenLayout
         layout: _layout,
         bytes: data,
         instruction:
-            MetaplexGumdropProgramInstruction.claimCandyProven.insturction);
+            MetaplexGumdropProgramInstruction.claimCandyProven.instruction);
     return MetaplexGumdropClaimCandyProvenLayout(
         walletBump: decode["walletBump"],
         claimBump: decode["claimBump"],

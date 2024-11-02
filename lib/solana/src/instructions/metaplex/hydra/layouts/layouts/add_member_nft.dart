@@ -10,7 +10,7 @@ class MetaplexHydraAddMemberNftLayout extends MetaplexHydraProgramLayout {
         layout: _layout,
         bytes: data,
         instruction:
-            MetaplexHydraProgramInstruction.processAddMemberNft.insturction);
+            MetaplexHydraProgramInstruction.processAddMemberNft.instruction);
     return MetaplexHydraAddMemberNftLayout(shares: decode["shares"]);
   }
 

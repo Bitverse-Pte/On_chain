@@ -18,7 +18,7 @@ class StakeAuthorizeLayout extends StakeProgramLayout {
     final decode = ProgramLayout.decodeAndValidateStruct(
         layout: _layout,
         bytes: data,
-        instruction: StakeProgramInstruction.authorize.insturction);
+        instruction: StakeProgramInstruction.authorize.instruction);
     return StakeAuthorizeLayout._(
         decode["newAuthorized"], decode["stakeAuthorizationType"]);
   }

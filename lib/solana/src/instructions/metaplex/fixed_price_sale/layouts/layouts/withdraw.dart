@@ -12,7 +12,7 @@ class MetaplexFixedPriceSaleWithdrawLayout
         layout: _layout,
         bytes: data,
         instruction:
-            MetaplexFixedPriceSaleProgramInstruction.withdraw.insturction);
+            MetaplexFixedPriceSaleProgramInstruction.withdraw.instruction);
     return MetaplexFixedPriceSaleWithdrawLayout(
         treasuryOwnerBump: decode["treasuryOwnerBump"],
         payoutTicketBump: decode["payoutTicketBump"]);

@@ -22,7 +22,7 @@ class SPLTokenTransferLayout extends SPLTokenProgramLayout {
     final decode = ProgramLayout.decodeAndValidateStruct(
       layout: _layout,
       bytes: bytes,
-      instruction: SPLTokenProgramInstruction.transfer.insturction,
+      instruction: SPLTokenProgramInstruction.transfer.instruction,
     );
     return SPLTokenTransferLayout(amount: decode["amount"]);
   }

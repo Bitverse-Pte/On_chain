@@ -10,7 +10,7 @@ class MetaplexHydraTransferSharesLayout extends MetaplexHydraProgramLayout {
         layout: _layout,
         bytes: data,
         instruction:
-            MetaplexHydraProgramInstruction.processTransferShares.insturction);
+            MetaplexHydraProgramInstruction.processTransferShares.instruction);
     return MetaplexHydraTransferSharesLayout(shares: decode["shares"]);
   }
 

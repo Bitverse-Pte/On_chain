@@ -22,7 +22,7 @@ class MetaplexBubblegumTransferLayout extends MetaplexBubblegumProgramLayout {
     final decode = MetaplexBubblegumProgramLayout.decodeAndValidateStruct(
         layout: _layout,
         bytes: data,
-        instruction: MetaplexBubblegumProgramInstruction.transfer.insturction);
+        instruction: MetaplexBubblegumProgramInstruction.transfer.instruction);
     return MetaplexBubblegumTransferLayout(
         root: decode['root'],
         dataHash: decode["dataHash"],

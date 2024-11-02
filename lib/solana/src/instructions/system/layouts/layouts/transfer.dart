@@ -11,7 +11,7 @@ class SystemTransferLayout extends SystemProgramLayout {
     final decode = ProgramLayout.decodeAndValidateStruct(
         layout: _layout,
         bytes: data,
-        instruction: SystemProgramInstruction.transfer.insturction);
+        instruction: SystemProgramInstruction.transfer.instruction);
     return SystemTransferLayout(lamports: decode["lamports"]);
   }
   static final StructLayout _layout = LayoutConst.struct([

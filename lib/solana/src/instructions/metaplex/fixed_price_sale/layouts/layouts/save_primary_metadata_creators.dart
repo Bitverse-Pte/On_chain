@@ -14,7 +14,7 @@ class MetaplexFixedPriceSaleSavePrimaryMetadataCreatorsLayout
         layout: _layout,
         bytes: data,
         instruction: MetaplexFixedPriceSaleProgramInstruction
-            .savePrimaryMetadataCreators.insturction);
+            .savePrimaryMetadataCreators.instruction);
     return MetaplexFixedPriceSaleSavePrimaryMetadataCreatorsLayout(
         primaryMetadataCreatorsBump: decode["primaryMetadataCreatorsBump"],
         creators: (decode["creators"] as List)

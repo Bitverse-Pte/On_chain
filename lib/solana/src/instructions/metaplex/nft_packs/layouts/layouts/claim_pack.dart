@@ -10,7 +10,7 @@ class MetaplexNFTPacksClaimPackLayout extends MetaplexNFTPacksProgramLayout {
     final decode = ProgramLayout.decodeAndValidateStruct(
         layout: _layout,
         bytes: data,
-        instruction: MetaplexNFTPacksProgramInstruction.claimPack.insturction);
+        instruction: MetaplexNFTPacksProgramInstruction.claimPack.instruction);
     return MetaplexNFTPacksClaimPackLayout(index: decode["index"]);
   }
 

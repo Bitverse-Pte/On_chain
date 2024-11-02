@@ -33,7 +33,7 @@ class MetaplexTokenMetaDataUpdateV1Layout
         layout: _layout,
         bytes: data,
         instruction:
-            MetaplexTokenMetaDataProgramInstruction.updateV1.insturction,
+            MetaplexTokenMetaDataProgramInstruction.updateV1.instruction,
         discriminator: discriminator);
     return MetaplexTokenMetaDataUpdateV1Layout(
         collection: CollectionToggle.fromJson(decode["collection"]),

@@ -14,7 +14,7 @@ class MetaplexTokenEntanglerUpdateEntangledPairLayout
         layout: _layout,
         bytes: data,
         instruction: MetaplexTokenEntanglerProgramInstruction
-            .updateEntangledPair.insturction);
+            .updateEntangledPair.instruction);
     return MetaplexTokenEntanglerUpdateEntangledPairLayout(
         price: decode["price"], paysEveryTime: decode["paysEveryTime"]);
   }

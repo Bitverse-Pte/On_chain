@@ -14,7 +14,7 @@ class MetaplexTokenMetaDataBurnV1Layout
         bytes: data,
         discriminator: discriminator,
         instruction:
-            MetaplexTokenMetaDataProgramInstruction.burnV1.insturction);
+            MetaplexTokenMetaDataProgramInstruction.burnV1.instruction);
     return MetaplexTokenMetaDataBurnV1Layout(amount: decode["amount"]);
   }
 

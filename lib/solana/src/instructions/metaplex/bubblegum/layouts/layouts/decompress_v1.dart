@@ -12,7 +12,7 @@ class MetaplexBubblegumDecompressV1Layout
         layout: _layout,
         bytes: data,
         instruction:
-            MetaplexBubblegumProgramInstruction.decompressV1.insturction);
+            MetaplexBubblegumProgramInstruction.decompressV1.instruction);
     return MetaplexBubblegumDecompressV1Layout(
         metaData: MetaData.fromJson(decode["metaData"]));
   }

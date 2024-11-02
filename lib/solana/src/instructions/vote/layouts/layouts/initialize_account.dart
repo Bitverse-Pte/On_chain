@@ -20,7 +20,7 @@ class VoteProgramInitializeAccountLayout extends VoteProgramLayout {
     final decode = ProgramLayout.decodeAndValidateStruct(
         layout: _layout,
         bytes: data,
-        instruction: VoteProgramInstruction.initializeAccount.insturction);
+        instruction: VoteProgramInstruction.initializeAccount.instruction);
     final voteData = Map<String, dynamic>.from(decode["voteInit"]);
     return VoteProgramInitializeAccountLayout(
       nodePubkey: voteData["nodePubkey"],

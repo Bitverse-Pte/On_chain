@@ -11,7 +11,7 @@ class TokenLendingRefreshObligationLayout extends TokenLendingProgramLayout {
         layout: _layout,
         bytes: data,
         instruction:
-            TokenLendingProgramInstruction.refreshObligation.insturction);
+            TokenLendingProgramInstruction.refreshObligation.instruction);
     return const TokenLendingRefreshObligationLayout();
   }
   static final StructLayout _layout =

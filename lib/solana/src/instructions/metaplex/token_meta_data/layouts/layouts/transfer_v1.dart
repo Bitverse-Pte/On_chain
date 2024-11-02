@@ -19,7 +19,7 @@ class MetaplexTokenMetaDataTransferV1Layout
         layout: _layout,
         bytes: data,
         instruction:
-            MetaplexTokenMetaDataProgramInstruction.transferV1.insturction,
+            MetaplexTokenMetaDataProgramInstruction.transferV1.instruction,
         discriminator: discriminator);
     return MetaplexTokenMetaDataTransferV1Layout(
         authorizationData: decode["authorizationData"] == null

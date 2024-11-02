@@ -25,7 +25,7 @@ class SPLTokenInitializeMultisigLayout extends SPLTokenProgramLayout {
     final decode = ProgramLayout.decodeAndValidateStruct(
       layout: _layout,
       bytes: bytes,
-      instruction: SPLTokenProgramInstruction.initializeMultisig.insturction,
+      instruction: SPLTokenProgramInstruction.initializeMultisig.instruction,
     );
     return SPLTokenInitializeMultisigLayout(
       numberOfRequiredSignatures: decode["numberOfRequiredSignatures"],

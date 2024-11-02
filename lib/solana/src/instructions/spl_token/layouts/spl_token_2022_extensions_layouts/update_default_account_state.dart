@@ -24,7 +24,7 @@ class SPLToken2022UpdateDefaultAccountStateLayout
         layout: _layout,
         bytes: bytes,
         instruction: SPLTokenProgramInstruction
-            .defaultAccountStateExtension.insturction);
+            .defaultAccountStateExtension.instruction);
     return SPLToken2022UpdateDefaultAccountStateLayout(
         accountState: AccountState.fromJson(decode["accountState"]));
   }

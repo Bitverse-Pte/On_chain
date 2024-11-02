@@ -12,7 +12,7 @@ class MetaplexTokenMetaDataFreezeDelegatedAccountLayout
         layout: _layout,
         bytes: data,
         instruction: MetaplexTokenMetaDataProgramInstruction
-            .freezeDelegatedAccount.insturction);
+            .freezeDelegatedAccount.instruction);
     return const MetaplexTokenMetaDataFreezeDelegatedAccountLayout();
   }
 

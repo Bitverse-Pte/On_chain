@@ -13,7 +13,7 @@ class AddressLookupCloseLookupTableLayout
         layout: _layout,
         bytes: data,
         instruction:
-            AddressLookupTableProgramInstruction.closeLookupTable.insturction);
+            AddressLookupTableProgramInstruction.closeLookupTable.instruction);
     return const AddressLookupCloseLookupTableLayout();
   }
 

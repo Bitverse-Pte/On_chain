@@ -27,7 +27,7 @@ class MetaplexBubblegumVerifyCreatorLayout
         layout: _layout,
         bytes: data,
         instruction:
-            MetaplexBubblegumProgramInstruction.verifyCreator.insturction);
+            MetaplexBubblegumProgramInstruction.verifyCreator.instruction);
     return MetaplexBubblegumVerifyCreatorLayout(
         root: decode["root"],
         dataHash: decode["dataHash"],

@@ -12,7 +12,7 @@ class MetaplexAuctionHouseCancelListingReceiptLayout
         layout: _layout,
         bytes: data,
         instruction: MetaplexAuctionHouseProgramInstruction
-            .cancelListingReceipt.insturction);
+            .cancelListingReceipt.instruction);
     return const MetaplexAuctionHouseCancelListingReceiptLayout();
   }
 

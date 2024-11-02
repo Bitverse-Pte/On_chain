@@ -15,7 +15,7 @@ class TokenLendingLiquidateObligationLayout extends TokenLendingProgramLayout {
         layout: _layout,
         bytes: data,
         instruction:
-            TokenLendingProgramInstruction.liquidateObligation.insturction);
+            TokenLendingProgramInstruction.liquidateObligation.instruction);
     return TokenLendingLiquidateObligationLayout(
         liquidityAmount: decode["liquidityAmount"]);
   }

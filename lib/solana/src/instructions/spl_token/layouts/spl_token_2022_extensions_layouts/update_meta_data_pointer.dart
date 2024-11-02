@@ -22,7 +22,7 @@ class SPLToken2022UpdateMetadataPointerLayout extends SPLTokenProgramLayout {
         layout: _layout,
         bytes: bytes,
         instruction:
-            SPLTokenProgramInstruction.metadataPointerExtension.insturction);
+            SPLTokenProgramInstruction.metadataPointerExtension.instruction);
     return SPLToken2022UpdateMetadataPointerLayout(
         metadataAddress: decode["authority"] == SolAddress.defaultPubKey
             ? null

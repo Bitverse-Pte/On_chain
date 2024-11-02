@@ -14,7 +14,7 @@ class StakeWithdrawLayout extends StakeProgramLayout {
     final decode = ProgramLayout.decodeAndValidateStruct(
         layout: _layout,
         bytes: data,
-        instruction: StakeProgramInstruction.withdraw.insturction);
+        instruction: StakeProgramInstruction.withdraw.instruction);
     return StakeWithdrawLayout._(decode["lamports"]);
   }
   static final StructLayout _layout = LayoutConst.struct([

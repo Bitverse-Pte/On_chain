@@ -12,7 +12,7 @@ class MetaplexNFTPacksTransferPackAuthorityLayout
         layout: _layout,
         bytes: data,
         instruction: MetaplexNFTPacksProgramInstruction
-            .transferPackAuthority.insturction);
+            .transferPackAuthority.instruction);
     return const MetaplexNFTPacksTransferPackAuthorityLayout();
   }
 

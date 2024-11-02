@@ -11,7 +11,7 @@ class StakePoolUpdateStakePoolBalanceLayout extends StakePoolProgramLayout {
         layout: _layout,
         bytes: bytes,
         instruction:
-            StakePoolProgramInstruction.updateStakePoolBalance.insturction);
+            StakePoolProgramInstruction.updateStakePoolBalance.instruction);
     return const StakePoolUpdateStakePoolBalanceLayout();
   }
   static final StructLayout _layout =

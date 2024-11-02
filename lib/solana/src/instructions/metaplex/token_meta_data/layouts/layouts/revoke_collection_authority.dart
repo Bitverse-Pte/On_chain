@@ -12,7 +12,7 @@ class MetaplexTokenMetaDataRevokeCollectionAuthorityLayout
         layout: _layout,
         bytes: data,
         instruction: MetaplexTokenMetaDataProgramInstruction
-            .revokeCollectionAuthority.insturction);
+            .revokeCollectionAuthority.instruction);
     return const MetaplexTokenMetaDataRevokeCollectionAuthorityLayout();
   }
 

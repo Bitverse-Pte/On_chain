@@ -11,7 +11,7 @@ class MetaplexNFTPacksDeletePackVoucherLayout
         layout: _layout,
         bytes: data,
         instruction:
-            MetaplexNFTPacksProgramInstruction.deletePackVoucher.insturction);
+            MetaplexNFTPacksProgramInstruction.deletePackVoucher.instruction);
     return const MetaplexNFTPacksDeletePackVoucherLayout();
   }
 

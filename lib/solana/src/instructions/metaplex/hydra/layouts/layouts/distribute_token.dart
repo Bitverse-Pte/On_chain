@@ -10,7 +10,7 @@ class MetaplexHydraDistributeTokenLayout extends MetaplexHydraProgramLayout {
         layout: _layout,
         bytes: data,
         instruction:
-            MetaplexHydraProgramInstruction.processDistributeToken.insturction);
+            MetaplexHydraProgramInstruction.processDistributeToken.instruction);
     return MetaplexHydraDistributeTokenLayout(
         distributeForMint: decode["distributeForMint"]);
   }

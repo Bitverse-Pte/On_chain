@@ -20,7 +20,7 @@ class SystemTransferWithSeedLayout extends SystemProgramLayout {
     final decode = ProgramLayout.decodeAndValidateStruct(
         layout: _layout,
         bytes: data,
-        instruction: SystemProgramInstruction.transferWithSeed.insturction);
+        instruction: SystemProgramInstruction.transferWithSeed.instruction);
     return SystemTransferWithSeedLayout(
         lamports: decode["lamports"],
         seed: decode["seed"],

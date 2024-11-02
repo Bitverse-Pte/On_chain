@@ -18,7 +18,7 @@ class MetaplexTokenMetaDataUpdateAsProgrammableConfigDelegateV2Layout
         layout: _layout,
         bytes: data,
         instruction: MetaplexTokenMetaDataProgramInstruction
-            .updateAsProgrammableConfigDelegateV2.insturction,
+            .updateAsProgrammableConfigDelegateV2.instruction,
         discriminator: discriminator);
     return MetaplexTokenMetaDataUpdateAsProgrammableConfigDelegateV2Layout(
         ruleSet: RuleSetToggle.fromJson(decode["ruleSet"]),

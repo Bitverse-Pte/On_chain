@@ -13,7 +13,7 @@ class MetaplexTokenMetaDataUnverifyLayout
         layout: _layout,
         bytes: data,
         instruction: MetaplexTokenMetaDataProgramInstruction
-            .unverifyCollectionV1.insturction);
+            .unverifyCollectionV1.instruction);
     return MetaplexTokenMetaDataUnverifyLayout(
         verification: Verification.fromValue(decode["discriminator"]));
   }

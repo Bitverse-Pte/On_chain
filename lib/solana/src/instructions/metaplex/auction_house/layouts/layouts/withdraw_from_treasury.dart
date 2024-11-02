@@ -13,7 +13,7 @@ class MetaplexAuctionHouseWithdrawFromTreasuryLayout
         layout: _layout,
         bytes: data,
         instruction: MetaplexAuctionHouseProgramInstruction
-            .withdrawFromTreasury.insturction);
+            .withdrawFromTreasury.instruction);
     return MetaplexAuctionHouseWithdrawFromTreasuryLayout(
         amount: decode["amount"]);
   }

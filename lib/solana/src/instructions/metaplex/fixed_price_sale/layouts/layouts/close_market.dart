@@ -10,7 +10,7 @@ class MetaplexFixedPriceSaleCloseMarketLayout
         layout: _layout,
         bytes: data,
         instruction:
-            MetaplexFixedPriceSaleProgramInstruction.closeMarket.insturction);
+            MetaplexFixedPriceSaleProgramInstruction.closeMarket.instruction);
     return MetaplexFixedPriceSaleCloseMarketLayout();
   }
 

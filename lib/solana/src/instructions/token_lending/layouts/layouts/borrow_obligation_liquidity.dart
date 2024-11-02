@@ -16,7 +16,7 @@ class TokenLendingBorrowObligationLiquidityLayout
         layout: _layout,
         bytes: data,
         instruction: TokenLendingProgramInstruction
-            .borrowObligationLiquidity.insturction);
+            .borrowObligationLiquidity.instruction);
     return TokenLendingBorrowObligationLiquidityLayout(
         liquidityAmount: decode["liquidityAmount"]);
   }

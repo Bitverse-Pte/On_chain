@@ -11,7 +11,7 @@ class SystemWithdrawNonceLayout extends SystemProgramLayout {
     final decode = ProgramLayout.decodeAndValidateStruct(
         layout: _layout,
         bytes: data,
-        instruction: SystemProgramInstruction.withdrawNonceAccount.insturction);
+        instruction: SystemProgramInstruction.withdrawNonceAccount.instruction);
     return SystemWithdrawNonceLayout(lamports: decode["lamports"]);
   }
   static final StructLayout _layout = LayoutConst.struct([

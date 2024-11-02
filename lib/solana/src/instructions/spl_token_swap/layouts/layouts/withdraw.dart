@@ -26,7 +26,7 @@ class SPLTokenSwapWithdrawLayout extends SPLTokenSwapProgramLayout {
     final decode = ProgramLayout.decodeAndValidateStruct(
       layout: _layout,
       bytes: bytes,
-      instruction: SPLTokenSwapProgramInstruction.withdrawToken.insturction,
+      instruction: SPLTokenSwapProgramInstruction.withdrawToken.instruction,
     );
 
     return SPLTokenSwapWithdrawLayout(

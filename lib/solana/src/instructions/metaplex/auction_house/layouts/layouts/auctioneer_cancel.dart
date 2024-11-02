@@ -15,7 +15,7 @@ class MetaplexAuctionHouseAuctioneerCancelLayout
         layout: _layout,
         bytes: data,
         instruction: MetaplexAuctionHouseProgramInstruction
-            .auctioneerCancel.insturction);
+            .auctioneerCancel.instruction);
     return MetaplexAuctionHouseAuctioneerCancelLayout(
         buyerPrice: decode["buyerPrice"], tokenSize: decode["tokenSize"]);
   }

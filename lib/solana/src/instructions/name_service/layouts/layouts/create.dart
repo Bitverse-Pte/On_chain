@@ -28,12 +28,12 @@ class NameServiceCreateLayout extends NameServiceProgramLayout {
     Map<String, dynamic> decode = ProgramLayout.decodeAndValidateStruct(
       layout: _layout,
       bytes: data,
-      instruction: NameServiceProgramInstruction.create.insturction,
+      instruction: NameServiceProgramInstruction.create.instruction,
     );
     decode = ProgramLayout.decodeAndValidateStruct(
       layout: _layout,
       bytes: data,
-      instruction: NameServiceProgramInstruction.create.insturction,
+      instruction: NameServiceProgramInstruction.create.instruction,
     );
     return NameServiceCreateLayout(
       lamports: decode["lamports"],

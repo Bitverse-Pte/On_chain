@@ -14,7 +14,7 @@ class MetaplexTokenMetaDataBubblegumSetCollectionSizeLayout
         layout: _layout,
         bytes: data,
         instruction: MetaplexTokenMetaDataProgramInstruction
-            .bubblegumSetCollectionSize.insturction);
+            .bubblegumSetCollectionSize.instruction);
     return MetaplexTokenMetaDataBubblegumSetCollectionSizeLayout(
         size: decode["size"]);
   }

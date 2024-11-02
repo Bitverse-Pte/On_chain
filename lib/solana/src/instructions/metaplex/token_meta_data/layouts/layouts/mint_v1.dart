@@ -14,7 +14,7 @@ class MetaplexTokenMetaDataMintV1Layout
     final decode = ProgramLayout.decodeAndValidateStruct(
         layout: _layout,
         bytes: data,
-        instruction: MetaplexTokenMetaDataProgramInstruction.mintV1.insturction,
+        instruction: MetaplexTokenMetaDataProgramInstruction.mintV1.instruction,
         discriminator: discriminator);
     return MetaplexTokenMetaDataMintV1Layout(
         authorizationData: decode["authorizationData"] == null

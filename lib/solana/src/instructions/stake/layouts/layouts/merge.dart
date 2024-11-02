@@ -9,7 +9,7 @@ class StakeMergeLayout extends StakeProgramLayout {
     ProgramLayout.decodeAndValidateStruct(
         layout: _layout,
         bytes: data,
-        instruction: StakeProgramInstruction.merge.insturction);
+        instruction: StakeProgramInstruction.merge.instruction);
     return const StakeMergeLayout();
   }
   static final StructLayout _layout =

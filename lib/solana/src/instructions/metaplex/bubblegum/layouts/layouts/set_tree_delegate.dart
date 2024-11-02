@@ -10,7 +10,7 @@ class MetaplexBubblegumSetTreeDelegateLayout
         layout: _layout,
         bytes: data,
         instruction:
-            MetaplexBubblegumProgramInstruction.setTreeDelegate.insturction);
+            MetaplexBubblegumProgramInstruction.setTreeDelegate.instruction);
     return const MetaplexBubblegumSetTreeDelegateLayout();
   }
 

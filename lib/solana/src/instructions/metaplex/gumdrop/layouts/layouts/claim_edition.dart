@@ -27,7 +27,7 @@ class MetaplexGumdropClaimEditionLayout extends MetaplexGumdropProgramLayout {
         layout: _layout,
         bytes: data,
         instruction:
-            MetaplexGumdropProgramInstruction.claimEdition.insturction);
+            MetaplexGumdropProgramInstruction.claimEdition.instruction);
     return MetaplexGumdropClaimEditionLayout(
         claimBump: decode["claimBump"],
         index: decode["index"],

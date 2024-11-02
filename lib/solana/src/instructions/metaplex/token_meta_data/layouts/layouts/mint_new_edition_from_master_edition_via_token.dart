@@ -14,7 +14,7 @@ class MetaplexTokenMetaDataMintNewEditionFromMasterEditionViaTokenLayout
         layout: _layout,
         bytes: data,
         instruction: MetaplexTokenMetaDataProgramInstruction
-            .mintNewEditionFromMasterEditionViaToken.insturction);
+            .mintNewEditionFromMasterEditionViaToken.instruction);
     return MetaplexTokenMetaDataMintNewEditionFromMasterEditionViaTokenLayout(
         edition: decode["edition"]);
   }

@@ -26,7 +26,7 @@ class SystemAllocateWithSeedLayout extends SystemProgramLayout {
     final decode = ProgramLayout.decodeAndValidateStruct(
         layout: _layout,
         bytes: data,
-        instruction: SystemProgramInstruction.allocateWithSeed.insturction);
+        instruction: SystemProgramInstruction.allocateWithSeed.instruction);
     return SystemAllocateWithSeedLayout(
         base: decode["base"],
         seed: decode["seed"],

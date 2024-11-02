@@ -9,7 +9,7 @@ class MetaplexHydraSignMetadataLayout extends MetaplexHydraProgramLayout {
         layout: _layout,
         bytes: data,
         instruction:
-            MetaplexHydraProgramInstruction.processSignMetadata.insturction);
+            MetaplexHydraProgramInstruction.processSignMetadata.instruction);
     return const MetaplexHydraSignMetadataLayout();
   }
 

@@ -17,7 +17,7 @@ class SPLTokenSyncNativeLayout extends SPLTokenProgramLayout {
     ProgramLayout.decodeAndValidateStruct(
         layout: _layout,
         bytes: bytes,
-        instruction: SPLTokenProgramInstruction.syncNative.insturction);
+        instruction: SPLTokenProgramInstruction.syncNative.instruction);
     return SPLTokenSyncNativeLayout();
   }
 

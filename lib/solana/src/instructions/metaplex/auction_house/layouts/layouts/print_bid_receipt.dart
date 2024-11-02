@@ -12,7 +12,7 @@ class MetaplexAuctionHousePrintBidReceiptLayout
         layout: _layout,
         bytes: data,
         instruction:
-            MetaplexAuctionHouseProgramInstruction.printBidReceipt.insturction);
+            MetaplexAuctionHouseProgramInstruction.printBidReceipt.instruction);
     return MetaplexAuctionHousePrintBidReceiptLayout(
         receiptBump: decode["receiptBump"]);
   }

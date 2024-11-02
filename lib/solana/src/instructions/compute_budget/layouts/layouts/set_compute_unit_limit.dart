@@ -17,7 +17,7 @@ class ComputeBudgetSetComputeUnitLimitLayout
         layout: _layout,
         bytes: data,
         instruction:
-            ComputeBudgetProgramInstruction.setComputeUnitLimit.insturction);
+            ComputeBudgetProgramInstruction.setComputeUnitLimit.instruction);
     return ComputeBudgetSetComputeUnitLimitLayout(units: decode["units"]);
   }
   // StructLayout layout definition.

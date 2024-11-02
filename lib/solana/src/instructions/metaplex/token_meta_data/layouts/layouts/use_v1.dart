@@ -13,7 +13,7 @@ class MetaplexTokenMetaDataUseV1Layout
     final decode = ProgramLayout.decodeAndValidateStruct(
         layout: _layout,
         bytes: data,
-        instruction: MetaplexTokenMetaDataProgramInstruction.useV1.insturction,
+        instruction: MetaplexTokenMetaDataProgramInstruction.useV1.instruction,
         discriminator: discriminator);
     return MetaplexTokenMetaDataUseV1Layout(
         authorizationData: decode["authorizationData"] == null

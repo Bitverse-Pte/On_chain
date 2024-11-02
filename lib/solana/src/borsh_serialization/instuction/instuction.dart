@@ -1,7 +1,7 @@
 import 'package:on_chain/solana/solana.dart';
 
 abstract class ProgramLayoutInstruction {
-  abstract final dynamic insturction;
+  abstract final dynamic instruction;
   abstract final String name;
   abstract final String programName;
   abstract final SolAddress programAddress;
@@ -9,10 +9,10 @@ abstract class ProgramLayoutInstruction {
 
 class UnknownProgramInstruction implements ProgramLayoutInstruction {
   @override
-  final dynamic insturction;
+  final dynamic instruction;
   @override
   final String name;
-  const UnknownProgramInstruction(this.insturction, this.name);
+  const UnknownProgramInstruction(this.instruction, this.name);
   static const UnknownProgramInstruction unknown =
       UnknownProgramInstruction(null, "Unknown");
 

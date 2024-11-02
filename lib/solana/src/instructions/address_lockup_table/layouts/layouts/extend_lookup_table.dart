@@ -18,7 +18,7 @@ class AddressExtendLookupTableLayout extends AddressLookupTableProgramLayout {
         layout: _layout,
         bytes: data,
         instruction:
-            AddressLookupTableProgramInstruction.extendLookupTable.insturction);
+            AddressLookupTableProgramInstruction.extendLookupTable.instruction);
     return AddressExtendLookupTableLayout(
         addresses: (decode["addresses"] as List).cast<SolAddress>());
   }

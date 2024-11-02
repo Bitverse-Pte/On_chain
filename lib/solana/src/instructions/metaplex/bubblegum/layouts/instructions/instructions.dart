@@ -5,10 +5,10 @@ import 'package:on_chain/solana/src/instructions/metaplex/bubblegum/constant.dar
 
 class MetaplexBubblegumProgramInstruction implements ProgramLayoutInstruction {
   @override
-  final List<int> insturction;
+  final List<int> instruction;
   @override
   final String name;
-  const MetaplexBubblegumProgramInstruction(this.insturction, this.name);
+  const MetaplexBubblegumProgramInstruction(this.instruction, this.name);
   static const MetaplexBubblegumProgramInstruction burn =
       MetaplexBubblegumProgramInstruction(
           [116, 110, 29, 56, 107, 219, 42, 93], "Burn");
@@ -91,7 +91,7 @@ class MetaplexBubblegumProgramInstruction implements ProgramLayoutInstruction {
   static MetaplexBubblegumProgramInstruction? getInstruction(dynamic value) {
     try {
       return values.firstWhere(
-          (element) => BytesUtils.bytesEqual(element.insturction, value));
+          (element) => BytesUtils.bytesEqual(element.instruction, value));
     } catch (_) {
       return null;
     }

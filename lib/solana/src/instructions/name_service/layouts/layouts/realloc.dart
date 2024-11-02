@@ -17,7 +17,7 @@ class NameServiceReallocLayout extends NameServiceProgramLayout {
     final decode = ProgramLayout.decodeAndValidateStruct(
       layout: _layout,
       bytes: data,
-      instruction: NameServiceProgramInstruction.realloc.insturction,
+      instruction: NameServiceProgramInstruction.realloc.instruction,
     );
     return NameServiceReallocLayout(space: decode["space"]);
   }

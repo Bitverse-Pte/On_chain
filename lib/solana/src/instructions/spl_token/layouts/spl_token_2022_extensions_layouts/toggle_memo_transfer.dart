@@ -22,7 +22,7 @@ class SPLToken2022ToggleMemoTransferLayout extends SPLTokenProgramLayout {
         layout: _layout,
         bytes: bytes,
         instruction:
-            SPLTokenProgramInstruction.memoTransferExtension.insturction);
+            SPLTokenProgramInstruction.memoTransferExtension.instruction);
     return SPLToken2022ToggleMemoTransferLayout(
         memoTransfer: MemoTransferInstruction.fromJson(decode["memoTransfer"]));
   }

@@ -20,7 +20,7 @@ class MetaplexHydraInitLayout extends MetaplexHydraProgramLayout {
     final decode = MetaplexHydraProgramLayout.decodeAndValidateStruct(
         layout: _layout,
         bytes: data,
-        instruction: MetaplexHydraProgramInstruction.processInit.insturction);
+        instruction: MetaplexHydraProgramInstruction.processInit.instruction);
     return MetaplexHydraInitLayout(
         bumpSeed: decode["bumpSeed"],
         name: decode["name"],

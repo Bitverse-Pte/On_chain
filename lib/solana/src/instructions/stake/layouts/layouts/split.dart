@@ -14,7 +14,7 @@ class StakeSplitLayout extends StakeProgramLayout {
     final decode = ProgramLayout.decodeAndValidateStruct(
         layout: _layout,
         bytes: data,
-        instruction: StakeProgramInstruction.split.insturction);
+        instruction: StakeProgramInstruction.split.instruction);
     return StakeSplitLayout(lamports: decode["lamports"]);
   }
   static final StructLayout _layout = LayoutConst.struct([

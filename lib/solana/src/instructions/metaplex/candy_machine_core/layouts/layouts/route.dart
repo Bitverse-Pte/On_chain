@@ -16,7 +16,7 @@ class MetaplexCandyMachineRouteLayout
     final decode = MetaplexCandyMachineProgramLayout.decodeAndValidateStruct(
         layout: _layout,
         bytes: data,
-        instruction: MetaplexCandyMachineProgramInstruction.route.insturction);
+        instruction: MetaplexCandyMachineProgramInstruction.route.instruction);
     return MetaplexCandyMachineRouteLayout(
         data: (decode["data"] as List).cast(),
         guard: GuardType.fromValue(decode["guard"]),

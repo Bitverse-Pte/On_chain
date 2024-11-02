@@ -20,7 +20,7 @@ class MetaplexAuctioneerBuyLayout extends MetaplexAuctioneerProgramLayout {
     final decode = MetaplexAuctioneerProgramLayout.decodeAndValidateStruct(
         layout: _layout,
         bytes: data,
-        instruction: MetaplexAuctioneerProgramInstruction.buy.insturction);
+        instruction: MetaplexAuctioneerProgramInstruction.buy.instruction);
     return MetaplexAuctioneerBuyLayout(
         tradeStateBump: decode["tradeStateBump"],
         escrowPaymentBump: decode["escrowPaymentBump"],

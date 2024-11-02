@@ -17,7 +17,7 @@ class MetaplexTokenMetaDataUnlockV1Layout
         layout: _layout,
         bytes: data,
         instruction:
-            MetaplexTokenMetaDataProgramInstruction.unlockV1.insturction,
+            MetaplexTokenMetaDataProgramInstruction.unlockV1.instruction,
         discriminator: discriminator);
     return MetaplexTokenMetaDataUnlockV1Layout(
       authorizationData: decode["authorizationData"] == null

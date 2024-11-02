@@ -16,7 +16,7 @@ class MetaplexBubblegumCreateTreeLayout extends MetaplexBubblegumProgramLayout {
         layout: _layout,
         bytes: data,
         instruction:
-            MetaplexBubblegumProgramInstruction.createTreeConfig.insturction);
+            MetaplexBubblegumProgramInstruction.createTreeConfig.instruction);
     return MetaplexBubblegumCreateTreeLayout(
         maxBufferSize: decode["maxBufferSize"],
         public: decode["public"],

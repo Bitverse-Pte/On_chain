@@ -9,7 +9,7 @@ class StakeDeactivateLayout extends StakeProgramLayout {
     ProgramLayout.decodeAndValidateStruct(
         layout: _layout,
         bytes: data,
-        instruction: StakeProgramInstruction.deactivate.insturction);
+        instruction: StakeProgramInstruction.deactivate.instruction);
     return const StakeDeactivateLayout();
   }
   static final StructLayout _layout =

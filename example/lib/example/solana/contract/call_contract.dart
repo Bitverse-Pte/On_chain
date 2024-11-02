@@ -1,12 +1,9 @@
-import 'dart:typed_data';
-
 import 'package:blockchain_utils/blockchain_utils.dart';
 import 'package:example/example/solana/service_example/service_example.dart';
 import 'package:on_chain/on_chain.dart';
-import 'package:on_chain/solana/src/borsh_serialization/program_layout.dart';
 
 void main() async {
-  String walletKey = "gasp become thing view slow uncover derive private media bounce lunch network";
+  String walletKey = "";
 
   Mnemonic walletMnemonic = Mnemonic.fromString(walletKey);
 
@@ -19,13 +16,21 @@ void main() async {
   /// Derive private key from seed
   final ownerPrivateKey = SolanaPrivateKey.fromSeed(hdWalletDerivePath.privateKey.raw);
 
+  String publicKeyHex = BytesUtils.toHexString(ownerPrivateKey.publicKey().toBytes());
+  List<int> publicKeyBytes = BytesUtils.fromHexString(publicKeyHex);
+  final pubKey = SolanaPublicKey.fromBytes(publicKeyBytes);
+  print(pubKey.toAddress().address);
+
+  print(publicKeyHex);
+
   /// Derive public key from private key
   SolAddress owner = ownerPrivateKey.publicKey().toAddress();
 
-  final instruction = TransactionInstruction(
+  ///此处通过claculate_instruction计算出来instruction
+  final instruction = CustomProgram(
     keys: [owner.toSignerAndWritable()],
     programId: SolAddress('GMq4fZi2nikRsE2izHjGAQSTNVXkxskxvCtikxG1PuS3'),
-    data: UnknownProgramLayout(Uint8List(0)).toBytes(),
+    layout: GetBalanceLayout(),
   );
 
   RPCHttpService service = RPCHttpService("https://rpc.ankr.com/solana_devnet");
@@ -47,5 +52,6 @@ void main() async {
 
   /// Send the transaction to the Solana network.
   String hash = await rpc.request(SolanaRPCSendTransaction(encodedTransaction: serializedTransaction));
+
   print('transaction hash: $hash');
 }

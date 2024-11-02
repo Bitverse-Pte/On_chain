@@ -12,7 +12,7 @@ class MetaplexTokenMetaDataApproveCollectionAuthorityLayout
         layout: _layout,
         bytes: data,
         instruction: MetaplexTokenMetaDataProgramInstruction
-            .approveCollectionAuthority.insturction);
+            .approveCollectionAuthority.instruction);
     return const MetaplexTokenMetaDataApproveCollectionAuthorityLayout();
   }
 

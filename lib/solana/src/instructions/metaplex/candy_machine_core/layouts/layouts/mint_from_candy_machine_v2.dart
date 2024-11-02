@@ -11,7 +11,7 @@ class MetaplexCandyMachineMintFromCandyMachineV2Layout
         layout: _layout,
         bytes: data,
         instruction: MetaplexCandyMachineProgramInstruction
-            .mintFromCandyMachineV2.insturction);
+            .mintFromCandyMachineV2.instruction);
     return const MetaplexCandyMachineMintFromCandyMachineV2Layout();
   }
   static final StructLayout _layout =

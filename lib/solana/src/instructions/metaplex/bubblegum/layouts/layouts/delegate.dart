@@ -21,7 +21,7 @@ class MetaplexBubblegumDelegateLayout extends MetaplexBubblegumProgramLayout {
     final decode = MetaplexBubblegumProgramLayout.decodeAndValidateStruct(
         layout: _layout,
         bytes: data,
-        instruction: MetaplexBubblegumProgramInstruction.delegate.insturction);
+        instruction: MetaplexBubblegumProgramInstruction.delegate.instruction);
     return MetaplexBubblegumDelegateLayout(
         root: decode['root'],
         dataHash: decode["dataHash"],

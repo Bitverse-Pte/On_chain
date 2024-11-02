@@ -31,7 +31,7 @@ class MetaplexGumdropProveClaimLayout extends MetaplexGumdropProgramLayout {
     final decode = MetaplexGumdropProgramLayout.decodeAndValidateStruct(
         layout: _layout,
         bytes: data,
-        instruction: MetaplexGumdropProgramInstruction.proveClaim.insturction);
+        instruction: MetaplexGumdropProgramInstruction.proveClaim.instruction);
     return MetaplexGumdropProveClaimLayout(
         claimPrefix: (decode["claimPrefix"] as List).cast(),
         claimBump: decode["claimBump"],

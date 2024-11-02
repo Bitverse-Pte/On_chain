@@ -17,7 +17,7 @@ class SPLTokenInitializeAccountLayout extends SPLTokenProgramLayout {
     ProgramLayout.decodeAndValidateStruct(
         layout: _layout,
         bytes: bytes,
-        instruction: SPLTokenProgramInstruction.initializeAccount.insturction);
+        instruction: SPLTokenProgramInstruction.initializeAccount.instruction);
     return SPLTokenInitializeAccountLayout();
   }
 

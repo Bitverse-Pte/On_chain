@@ -13,7 +13,7 @@ class AssociatedTokenAccountProgramRecoverNestedLayout
         layout: _layout,
         bytes: data,
         instruction:
-            AssociatedTokenAccountProgramInstruction.recoverNested.insturction);
+            AssociatedTokenAccountProgramInstruction.recoverNested.instruction);
     return const AssociatedTokenAccountProgramRecoverNestedLayout();
   }
   static final StructLayout _layout =
