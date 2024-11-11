@@ -15,7 +15,7 @@ Uint8List getInstructionIdentifier(String instructionName) {
 
 void main() {
   ///此处需要加上global这个namespace, 其实可以通过IDL获取到
-  String instructionName = "global:get_balance"; // 指令名称
+  String instructionName = "global:get_balance_by_address"; // 指令名称
   Uint8List instructionId = getInstructionIdentifier(instructionName);
 
   print(instructionId); // 打印 8 字节指令标识符

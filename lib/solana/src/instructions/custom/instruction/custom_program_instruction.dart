@@ -13,6 +13,9 @@ class CustomProgramInstruction implements ProgramLayoutInstruction {
   static const CustomProgramInstruction getBalance =
       CustomProgramInstruction([5, 173, 180, 151, 243, 81, 233, 55], "get_balance");
 
+  static const CustomProgramInstruction getBalanceByAddress =
+  CustomProgramInstruction([154, 66, 243, 109, 199, 31, 182, 244], "get_balance_by_address");
+
   static const List<CustomProgramInstruction> values = [
     getBalance,
   ];
