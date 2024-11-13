@@ -33,7 +33,7 @@ class SolanaRPCGetLeaderSchedule extends SolanaRPCRequest<LeaderSchedule> {
   }
 
   @override
-  LeaderSchedule onResonse(result) {
+  LeaderSchedule onResponse(result) {
     return LeaderSchedule.fromJson(result);
   }
 }

@@ -19,7 +19,7 @@ class SolanaRPCUnSubscribe extends SolanaRPCRequest<bool> {
   }
 
   @override
-  bool onResonse(result) {
+  bool onResponse(result) {
     return result;
   }
 }

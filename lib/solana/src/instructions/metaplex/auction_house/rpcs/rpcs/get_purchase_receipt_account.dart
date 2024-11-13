@@ -29,7 +29,7 @@ class SolanaRPCGetPurchaseReceiptAccount
   }
 
   @override
-  PurchaseReceipt? onResonse(result) {
+  PurchaseReceipt? onResponse(result) {
     if (result == null) return null;
     final accountInfo = SolanaAccountInfo.fromJson(result);
     return PurchaseReceipt.fromBuffer(accountInfo.toBytesData());

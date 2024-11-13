@@ -28,7 +28,7 @@ class SolanaRPCGetStoreAccount extends SolanaRPCRequest<Store?> {
   }
 
   @override
-  Store? onResonse(result) {
+  Store? onResponse(result) {
     if (result == null) return null;
     final accountInfo = SolanaAccountInfo.fromJson(result);
     return Store.fromBuffer(accountInfo.toBytesData());

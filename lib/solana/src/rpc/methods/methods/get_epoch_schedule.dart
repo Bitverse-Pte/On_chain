@@ -14,7 +14,7 @@ class SolanaRPCGetEpochSchedule extends SolanaRPCRequest<EpochSchedule> {
   }
 
   @override
-  EpochSchedule onResonse(result) {
+  EpochSchedule onResponse(result) {
     return EpochSchedule.fromJson(result);
   }
 }

@@ -26,7 +26,7 @@ class SolanaRPCGetVoteAccount extends SolanaRPCRequest<VoteAccount?> {
   }
 
   @override
-  VoteAccount? onResonse(result) {
+  VoteAccount? onResponse(result) {
     if (result == null) return null;
     final accountInfo = SolanaAccountInfo.fromJson(result);
     final accountDataBytes = accountInfo.toBytesData();

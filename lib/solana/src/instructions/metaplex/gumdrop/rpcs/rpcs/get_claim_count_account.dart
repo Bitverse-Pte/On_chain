@@ -28,7 +28,7 @@ class SolanaRPCGetClaimCountAccount extends SolanaRPCRequest<ClaimCount?> {
   }
 
   @override
-  ClaimCount? onResonse(result) {
+  ClaimCount? onResponse(result) {
     if (result == null) return null;
     final accountInfo = SolanaAccountInfo.fromJson(result);
     return ClaimCount.fromBuffer(accountInfo.toBytesData());

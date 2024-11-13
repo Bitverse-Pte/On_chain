@@ -25,7 +25,7 @@ class SolanaRPCGetLatestBlockhash
   }
 
   @override
-  BlockhashWithExpiryBlockHeight onResonse(result) {
+  BlockhashWithExpiryBlockHeight onResponse(result) {
     return BlockhashWithExpiryBlockHeight.fromJson(result);
   }
 }

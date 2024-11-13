@@ -37,7 +37,7 @@ class SolanaRPCGetSignatureStatuses
   }
 
   @override
-  List<SignatureStatus?> onResonse(result) {
+  List<SignatureStatus?> onResponse(result) {
     return (result as List)
         .map((e) => e == null ? null : SignatureStatus.fromJson(e))
         .toList();

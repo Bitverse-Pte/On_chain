@@ -4,7 +4,7 @@ import 'package:on_chain/on_chain.dart';
 import 'package:retry/retry.dart';
 
 void main() async {
-  String walletKey = "gasp become thing view slow uncover derive private media bounce lunch network";
+  String walletKey = "";
 
   Mnemonic walletMnemonic = Mnemonic.fromString(walletKey);
 
@@ -17,6 +17,8 @@ void main() async {
   /// Derive private key from seed
   final ownerPrivateKey = SolanaPrivateKey.fromSeed(hdWalletDerivePath.privateKey.raw);
 
+  print(ownerPrivateKey.toHex());
+
   String publicKeyHex = BytesUtils.toHexString(ownerPrivateKey.publicKey().toBytes());
   List<int> publicKeyBytes = BytesUtils.fromHexString(publicKeyHex);
   final pubKey = SolanaPublicKey.fromBytes(publicKeyBytes);
@@ -27,11 +29,18 @@ void main() async {
   /// Derive public key from private key
   SolAddress owner = ownerPrivateKey.publicKey().toAddress();
 
+  RPCHttpService service = RPCHttpService("https://rpc.ankr.com/solana_devnet");
+  final rpc = SolanaRPC(service);
+
+  VersionedTransactionResponse rawTransaction = await rpc.request(SolanaRPCGetTransaction(transactionSignature: 'D13jTJYXoQBcRY9AfT5xRtsew7ENgCkNs6mwwwAcUCp4ZZCEM7YwZ7en4tVsoDa7Gu75Jjj2FgLXNUz8Zmgedff'));
+
+  print(rawTransaction);
+
   ///此处通过claculate_instruction计算出来instruction
   // await getBalance(owner, ownerPrivateKey);
 
   ///此处通过claculate_instruction计算出来instruction
-  await getBalanceByAddress(owner, ownerPrivateKey);
+  // await getBalanceByAddress(owner, ownerPrivateKey);
 
   // await getTransaction("5eZQ79RXH567hqnF6W3iqhd5XYYVG6GerttFZUDu1qomoF4bhRsLpMcpQe1iNtSMQnq9K1upGTUNuowdDAspAiwv");
 }
@@ -94,33 +103,31 @@ Future<void> getBalanceByAddress(SolAddress owner, SolanaPrivateKey ownerPrivate
   final ownerSignature = ownerPrivateKey.sign(transaction.serializeMessage());
   transaction.addSignature(owner, ownerSignature);
 
-  /// Serialize the transaction.
-  final serializedTransaction = transaction.serializeString();
+  print(transaction.message);
 
-  /// Send the transaction to the Solana network.
-  String hash = await rpc.request(SolanaRPCSendTransaction(encodedTransaction: serializedTransaction));
-
-  print('transaction hash: $hash');
-
-  final r = RetryOptions(maxAttempts: 15, maxDelay: const Duration(seconds: 1));
-  final response = await r.retry(
-    () async {
-      try {
-        VersionedTransactionResponse response = await rpc.request(SolanaRPCGetTransaction(transactionSignature: '123123123'));
-        return response;
-      } catch (e) {
-        throw Exception(e.toString());
-      }
-    },
-    // Retry on SocketException or TimeoutException
-    retryIf: (e) => e is Exception,
-  );
-
-  print(response);
-
-  // final transactionResult = await rpc.request(SolanaRPCGetTransaction(transactionSignature: hash));
+  // /// Serialize the transaction.
+  // final serializedTransaction = transaction.serializeString();
   //
-  // print(transactionResult);
+  // /// Send the transaction to the Solana network.
+  // String hash = await rpc.request(SolanaRPCSendTransaction(encodedTransaction: serializedTransaction));
+  //
+  // print('transaction hash: $hash');
+  //
+  // final r = RetryOptions(maxAttempts: 15, maxDelay: const Duration(seconds: 1));
+  // final response = await r.retry(
+  //   () async {
+  //     try {
+  //       VersionedTransactionResponse response = await rpc.request(SolanaRPCGetTransaction(transactionSignature: '123123123'));
+  //       return response;
+  //     } catch (e) {
+  //       throw Exception(e.toString());
+  //     }
+  //   },
+  //   // Retry on SocketException or TimeoutException
+  //   retryIf: (e) => e is Exception,
+  // );
+  //
+  // print(response);
 }
 
 Future<void> getTransaction(String hash) async {

@@ -46,7 +46,7 @@ class SolanaRPCGetBlock extends SolanaRPCRequest<VersionedBlockResponse> {
   }
 
   @override
-  VersionedBlockResponse onResonse(result) {
+  VersionedBlockResponse onResponse(result) {
     return VersionedBlockResponse.fromJson(result);
   }
 }

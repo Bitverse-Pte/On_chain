@@ -54,7 +54,7 @@ class SolanaRPCGetProgramAccounts
   }
 
   @override
-  List<SolanaAccountInfo> onResonse(result) {
+  List<SolanaAccountInfo> onResponse(result) {
     return (result as List)
         .map((e) => SolanaAccountInfo.fromJson(e["account"]))
         .toList();

@@ -28,7 +28,7 @@ class SolanaRPCGetAuctionHouseAccount extends SolanaRPCRequest<AuctionHouse?> {
   }
 
   @override
-  AuctionHouse? onResonse(result) {
+  AuctionHouse? onResponse(result) {
     if (result == null) return null;
     final accountInfo = SolanaAccountInfo.fromJson(result);
     return AuctionHouse.fromBuffer(accountInfo.toBytesData());

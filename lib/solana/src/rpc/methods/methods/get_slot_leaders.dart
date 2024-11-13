@@ -22,7 +22,7 @@ class SolanaRPCGetSlotLeaders extends SolanaRPCRequest<List<SolAddress>> {
   }
 
   @override
-  List<SolAddress> onResonse(result) {
+  List<SolAddress> onResponse(result) {
     return (result as List).map((e) => SolAddress.uncheckCurve(e)).toList();
   }
 }

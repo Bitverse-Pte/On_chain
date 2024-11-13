@@ -28,7 +28,7 @@ class SolanaRPCGetTreeConfigAccount extends SolanaRPCRequest<TreeConfig?> {
   }
 
   @override
-  TreeConfig? onResonse(result) {
+  TreeConfig? onResponse(result) {
     if (result == null) return null;
     final accountInfo = SolanaAccountInfo.fromJson(result);
     return TreeConfig.fromBuffer(accountInfo.toBytesData());

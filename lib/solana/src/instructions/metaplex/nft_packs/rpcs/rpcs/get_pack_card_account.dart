@@ -28,7 +28,7 @@ class SolanaRPCGetPackCardAccount extends SolanaRPCRequest<PackCard?> {
   }
 
   @override
-  PackCard? onResonse(result) {
+  PackCard? onResponse(result) {
     if (result == null) return null;
     final accountInfo = SolanaAccountInfo.fromJson(result);
     return PackCard.fromBuffer(accountInfo.toBytesData());

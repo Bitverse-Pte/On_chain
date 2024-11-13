@@ -29,7 +29,7 @@ class SolanaRPCGetSupply extends SolanaRPCRequest<SupplyResponse> {
   }
 
   @override
-  SupplyResponse onResonse(result) {
+  SupplyResponse onResponse(result) {
     return SupplyResponse.fromJson(result);
   }
 }

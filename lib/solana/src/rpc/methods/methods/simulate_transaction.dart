@@ -59,7 +59,7 @@ class SolanaRPCSimulateTransaction
   }
 
   @override
-  SimulateTranasctionResponse onResonse(result) {
+  SimulateTranasctionResponse onResponse(result) {
     return SimulateTranasctionResponse.fromJson(result);
   }
 }

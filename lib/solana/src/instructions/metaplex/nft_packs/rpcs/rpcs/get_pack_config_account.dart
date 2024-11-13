@@ -28,7 +28,7 @@ class SolanaRPCGetPackConfigAccount extends SolanaRPCRequest<PackConfig?> {
   }
 
   @override
-  PackConfig? onResonse(result) {
+  PackConfig? onResponse(result) {
     if (result == null) return null;
     final accountInfo = SolanaAccountInfo.fromJson(result);
     return PackConfig.fromBuffer(accountInfo.toBytesData());

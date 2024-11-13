@@ -28,7 +28,7 @@ class SolanaRPCGetTokenLargestAccounts
   }
 
   @override
-  List<TokenAccountBalancePair> onResonse(result) {
+  List<TokenAccountBalancePair> onResponse(result) {
     return (result as List)
         .map((e) => TokenAccountBalancePair.fromJson(e))
         .toList();

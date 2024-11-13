@@ -28,7 +28,7 @@ class SolanaRPCGetVoucherAccount extends SolanaRPCRequest<Voucher?> {
   }
 
   @override
-  Voucher? onResonse(result) {
+  Voucher? onResponse(result) {
     if (result == null) return null;
     final accountInfo = SolanaAccountInfo.fromJson(result);
     return Voucher.fromBuffer(accountInfo.toBytesData());

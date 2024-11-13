@@ -23,7 +23,7 @@ class SolanaRPCGetSlotLeader extends SolanaRPCRequest<SolAddress> {
   }
 
   @override
-  SolAddress onResonse(result) {
+  SolAddress onResponse(result) {
     return SolAddress.uncheckCurve(result);
   }
 }

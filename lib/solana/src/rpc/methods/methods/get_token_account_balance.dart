@@ -29,7 +29,7 @@ class SolanaRPCGetTokenAccountBalance
   }
 
   @override
-  TokenAmoutResponse onResonse(result) {
+  TokenAmoutResponse onResponse(result) {
     return TokenAmoutResponse.fromJson(result);
   }
 }

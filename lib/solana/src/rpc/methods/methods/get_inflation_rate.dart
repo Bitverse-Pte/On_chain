@@ -15,7 +15,7 @@ class SolanaRPCGetInflationRate extends SolanaRPCRequest<InflationRate> {
   }
 
   @override
-  InflationRate onResonse(result) {
+  InflationRate onResponse(result) {
     return InflationRate.fromJson(result);
   }
 }

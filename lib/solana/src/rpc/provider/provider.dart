@@ -50,9 +50,9 @@ class SolanaRPC {
     if (response is Map &&
         response.containsKey("context") &&
         response.containsKey("value")) {
-      return request.onResonse(response["value"]);
+      return request.onResponse(response["value"]);
     }
-    return request.onResonse(response);
+    return request.onResponse(response);
   }
 
   Context? _fetchContext(dynamic response) {

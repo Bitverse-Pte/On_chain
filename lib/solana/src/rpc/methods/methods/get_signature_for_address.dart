@@ -50,7 +50,7 @@ class SolanaRPCGetSignaturesForAddress
   }
 
   @override
-  List<Map<String, dynamic>> onResonse(result) {
+  List<Map<String, dynamic>> onResponse(result) {
     return (result as List).map((e) => Map<String, dynamic>.from(e)).toList();
   }
 }

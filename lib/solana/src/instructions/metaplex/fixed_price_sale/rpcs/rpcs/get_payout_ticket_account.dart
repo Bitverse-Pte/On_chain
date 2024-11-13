@@ -28,7 +28,7 @@ class SolanaRPCGetPayoutTicketAccount extends SolanaRPCRequest<PayoutTicket?> {
   }
 
   @override
-  PayoutTicket? onResonse(result) {
+  PayoutTicket? onResponse(result) {
     if (result == null) return null;
     final accountInfo = SolanaAccountInfo.fromJson(result);
     return PayoutTicket.fromBuffer(accountInfo.toBytesData());

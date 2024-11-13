@@ -41,7 +41,7 @@ class SolanaRPCGetStakeActivation
   }
 
   @override
-  StakeActivationData onResonse(result) {
+  StakeActivationData onResponse(result) {
     return StakeActivationData.fromJson(result);
   }
 }

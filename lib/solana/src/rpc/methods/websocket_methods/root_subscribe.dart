@@ -14,7 +14,7 @@ class SolanaRPCProgramSubscribe extends SolanaRPCRequest<int> {
   }
 
   @override
-  int onResonse(result) {
+  int onResponse(result) {
     return result;
   }
 }

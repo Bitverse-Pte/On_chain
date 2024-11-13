@@ -29,7 +29,7 @@ class SolanaRPCGetRecentPrioritizationFees
   }
 
   @override
-  List<RecentPrioritizationFees> onResonse(result) {
+  List<RecentPrioritizationFees> onResponse(result) {
     return (result as List)
         .map((e) => RecentPrioritizationFees.fromJson(e))
         .toList();

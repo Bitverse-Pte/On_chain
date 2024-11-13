@@ -31,7 +31,7 @@ class SolanaRPCGetFeeForMessage extends SolanaRPCRequest<BigInt?> {
   }
 
   @override
-  BigInt? onResonse(result) {
+  BigInt? onResponse(result) {
     return BigintUtils.tryParse(result);
   }
 }

@@ -41,7 +41,7 @@ class SolanaRPCGetTransaction
   }
 
   @override
-  VersionedTransactionResponse onResonse(result) {
+  VersionedTransactionResponse onResponse(result) {
     return VersionedTransactionResponse.fromJson(result);
   }
 }

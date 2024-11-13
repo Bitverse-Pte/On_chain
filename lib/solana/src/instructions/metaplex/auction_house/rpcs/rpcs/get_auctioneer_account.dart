@@ -28,7 +28,7 @@ class SolanaRPCGetAuctioneerAccount extends SolanaRPCRequest<Auctioneer?> {
   }
 
   @override
-  Auctioneer? onResonse(result) {
+  Auctioneer? onResponse(result) {
     if (result == null) return null;
     final accountInfo = SolanaAccountInfo.fromJson(result);
     return Auctioneer.fromBuffer(accountInfo.toBytesData());

@@ -28,7 +28,7 @@ class SolanaRPCGetTradeHistoryAccount extends SolanaRPCRequest<TradeHistory?> {
   }
 
   @override
-  TradeHistory? onResonse(result) {
+  TradeHistory? onResponse(result) {
     if (result == null) return null;
     final accountInfo = SolanaAccountInfo.fromJson(result);
     return TradeHistory.fromBuffer(accountInfo.toBytesData());

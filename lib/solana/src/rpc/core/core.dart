@@ -86,7 +86,7 @@ abstract class SolanaRPCRequest<T> extends LoockupLedgerRequest
   String? get validate => null;
 
   /// Converts a dynamic response to the generic type [T].
-  T onResonse(dynamic result) {
+  T onResponse(dynamic result) {
     return result as T;
   }
 

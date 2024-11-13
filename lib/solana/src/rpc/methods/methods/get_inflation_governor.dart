@@ -22,7 +22,7 @@ class SolanaRPCGetInflationGovernor
   }
 
   @override
-  InflationGovernor onResonse(result) {
+  InflationGovernor onResponse(result) {
     return InflationGovernor.fromJson(result);
   }
 }

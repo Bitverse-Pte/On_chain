@@ -37,7 +37,7 @@ class SolanaRPCGetInflationReward
   }
 
   @override
-  List<InflationReward?> onResonse(result) {
+  List<InflationReward?> onResponse(result) {
     return (result as List)
         .map((e) => e == null ? null : InflationReward.fromJson(e))
         .toList();

@@ -30,7 +30,7 @@ class SolanaRPCSPLTokenSwapAccount
   }
 
   @override
-  SPLTokenSwapAccount? onResonse(result) {
+  SPLTokenSwapAccount? onResponse(result) {
     if (result == null) return null;
     final accountInfo = SolanaAccountInfo.fromJson(result);
     if (ownerProgramAddress != null &&

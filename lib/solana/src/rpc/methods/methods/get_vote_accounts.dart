@@ -42,7 +42,7 @@ class SolanaRPCGetVoteAccounts extends SolanaRPCRequest<VoteAccountStatus> {
   }
 
   @override
-  VoteAccountStatus onResonse(result) {
+  VoteAccountStatus onResponse(result) {
     return VoteAccountStatus.fromJson(result);
   }
 }

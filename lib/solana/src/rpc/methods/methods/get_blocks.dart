@@ -33,7 +33,7 @@ class SolanaRPCGetBlocks extends SolanaRPCRequest<List<int>> {
   }
 
   @override
-  List<int> onResonse(result) {
+  List<int> onResponse(result) {
     return (result as List).cast();
   }
 }

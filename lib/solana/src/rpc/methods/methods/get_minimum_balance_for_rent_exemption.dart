@@ -25,7 +25,7 @@ class SolanaRPCGetMinimumBalanceForRentExemption
   }
 
   @override
-  BigInt onResonse(result) {
+  BigInt onResponse(result) {
     return BigInt.from(result);
   }
 }

@@ -27,7 +27,7 @@ class SolanaRPCGetAccountLookupAddres
   }
 
   @override
-  AddressLookupTableAccount? onResonse(result) {
+  AddressLookupTableAccount? onResponse(result) {
     if (result == null) return null;
     final accountInfo = SolanaAccountInfo.fromJson(result);
     return AddressLookupTableAccount.fromBuffer(

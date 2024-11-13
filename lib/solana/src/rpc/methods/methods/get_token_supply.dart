@@ -26,7 +26,7 @@ class SolanaRPCGetTokenSupply extends SolanaRPCRequest<TokenAmoutResponse> {
   }
 
   @override
-  TokenAmoutResponse onResonse(result) {
+  TokenAmoutResponse onResponse(result) {
     return TokenAmoutResponse.fromJson(result);
   }
 }

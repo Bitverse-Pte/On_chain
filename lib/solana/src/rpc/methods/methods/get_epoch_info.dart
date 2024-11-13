@@ -25,7 +25,7 @@ class SolanaRPCGetEpochInfo extends SolanaRPCRequest<EpochInfo> {
   }
 
   @override
-  EpochInfo onResonse(result) {
+  EpochInfo onResponse(result) {
     return EpochInfo.fromJson(result);
   }
 }

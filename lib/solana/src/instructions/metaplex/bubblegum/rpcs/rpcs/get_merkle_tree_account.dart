@@ -28,7 +28,7 @@ class SolanaRPCGetMerkleTreeAccount extends SolanaRPCRequest<MerkleTree?> {
   }
 
   @override
-  MerkleTree? onResonse(result) {
+  MerkleTree? onResponse(result) {
     if (result == null) return null;
     final accountInfo = SolanaAccountInfo.fromJson(result);
     return MerkleTree.fromBuffer(accountInfo.toBytesData());

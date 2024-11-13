@@ -15,7 +15,7 @@ class SolanaRPCGetClusterNodes extends SolanaRPCRequest<List<ContactInfo>> {
   }
 
   @override
-  List<ContactInfo> onResonse(result) {
+  List<ContactInfo> onResponse(result) {
     return (result as List).map((e) => ContactInfo.fromJson(e)).toList();
   }
 }

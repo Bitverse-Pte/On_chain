@@ -26,7 +26,7 @@ class SolanaRPCGetTokenAccount extends SolanaRPCRequest<SolanaTokenAccount?> {
   }
 
   @override
-  SolanaTokenAccount? onResonse(result) {
+  SolanaTokenAccount? onResponse(result) {
     if (result == null) return null;
     final accountInfo = SolanaAccountInfo.fromJson(result);
     return SolanaTokenAccount.fromBuffer(

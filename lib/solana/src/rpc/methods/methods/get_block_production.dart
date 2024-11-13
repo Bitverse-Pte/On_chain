@@ -35,7 +35,7 @@ class SolanaRPCGetBlockProduction extends SolanaRPCRequest<BlockProduction> {
   }
 
   @override
-  BlockProduction onResonse(result) {
+  BlockProduction onResponse(result) {
     return BlockProduction.fromJson(result);
   }
 }

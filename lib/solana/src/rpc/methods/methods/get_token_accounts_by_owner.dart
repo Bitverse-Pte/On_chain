@@ -55,7 +55,7 @@ class SolanaRPCGetTokenAccountsByOwner
   }
 
   @override
-  List<TokenAccountResponse> onResonse(result) {
+  List<TokenAccountResponse> onResponse(result) {
     return (result as List)
         .map((e) => TokenAccountResponse.fromJson(e))
         .toList();

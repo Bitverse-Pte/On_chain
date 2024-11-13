@@ -28,7 +28,7 @@ class SolanaRPCGetMarketAccount extends SolanaRPCRequest<Market?> {
   }
 
   @override
-  Market? onResonse(result) {
+  Market? onResponse(result) {
     if (result == null) return null;
     final accountInfo = SolanaAccountInfo.fromJson(result);
     return Market.fromBuffer(accountInfo.toBytesData());

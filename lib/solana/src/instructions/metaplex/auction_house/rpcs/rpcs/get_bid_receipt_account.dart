@@ -28,7 +28,7 @@ class SolanaRPCGetBidReceiptAccount extends SolanaRPCRequest<BidReceipt?> {
   }
 
   @override
-  BidReceipt? onResonse(result) {
+  BidReceipt? onResponse(result) {
     if (result == null) return null;
     final accountInfo = SolanaAccountInfo.fromJson(result);
     return BidReceipt.fromBuffer(accountInfo.toBytesData());

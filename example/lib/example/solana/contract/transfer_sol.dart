@@ -5,7 +5,7 @@ import 'package:on_chain/on_chain.dart';
 void main() async {
   int nowInMilliseconds = DateTime.now().millisecondsSinceEpoch;
 
-  String walletKey = "gasp become thing view slow uncover derive private media bounce lunch network";
+  String walletKey = "";
 
   Mnemonic walletMnemonic = Mnemonic.fromString(walletKey);
 

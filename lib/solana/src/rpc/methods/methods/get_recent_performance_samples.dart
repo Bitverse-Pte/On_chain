@@ -24,7 +24,7 @@ class SolanaRPCGetRecentPerformanceSamples
   }
 
   @override
-  List<PerfSample> onResonse(result) {
+  List<PerfSample> onResponse(result) {
     return (result as List).map((e) => PerfSample.fromJson(e)).toList();
   }
 }

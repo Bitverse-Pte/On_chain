@@ -42,7 +42,7 @@ class SolanaRPCGetAccountInfo extends SolanaRPCRequest<SolanaAccountInfo?> {
   }
 
   @override
-  SolanaAccountInfo? onResonse(result) {
+  SolanaAccountInfo? onResponse(result) {
     if (result == null) return null;
     return SolanaAccountInfo.fromJson(result);
   }
